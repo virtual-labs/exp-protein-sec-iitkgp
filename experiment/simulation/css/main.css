@@ -1,4 +1,7 @@
-/* You CSS goes in here */
+/* Lab name: Experimental Biochemistry
+Exp name: Protein purification by size exclusion chromatography (SEC)
+File name: main.css
+Developer: Prakriti Dhang */
 
 .card {
     margin-bottom: 5px;
@@ -9,4 +12,43 @@
 
     display: inline-block;
     position: relative;
+}
+
+#falcon{
+    position: relative;
+    width:10%;
+    top:5%;
+    left:5%;
+    }
+
+
+#machine{
+position: absolute;
+width:25%;
+top:150%;
+left:5%;
+}
+
+#inject{
+    position: absolute;
+    width:10%;
+    top:197%;
+    left:40%; /*40- 30.4 */
+    rotate: 45deg;
+}
+
+#injection{
+    position: absolute;
+    width:3%;
+    top:230%;
+    left:47.5%;  /* 47-38 */
+    rotate: 45deg;
+}
+
+#column{
+
+    position: absolute;
+    width:4%;
+    top:50%;
+    left:55%;
 }
