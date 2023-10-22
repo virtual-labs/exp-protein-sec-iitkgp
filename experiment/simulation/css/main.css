@@ -14,41 +14,55 @@ Developer: Prakriti Dhang */
     position: relative;
 }
 
-#falcon{
+#falcon {
     position: relative;
-    width:10%;
-    top:5%;
-    left:5%;
-    }
-
-
-#machine{
-position: absolute;
-width:25%;
-top:150%;
-left:5%;
+    width: 5%;
+    top: 5%;
+    left: 5%;
 }
 
-#inject{
+#falconzoom {
     position: absolute;
-    width:10%;
-    top:197%;
-    left:40%; /*40- 30.4 */
+    width: 1%; /* 1-10 */
+    top: 60%;
+    left: 7%;
+}
+
+
+#machine {
+    position: absolute;
+    width: 95%;
+    top: 150%;
+    left: 3%;
+}
+
+#inject {
+    position: absolute;
+    width: 10%;
+    top: 288%; 
+    left:50%; /*50-40 */
     rotate: 45deg;
 }
 
-#injection{
+#injection {
     position: absolute;
-    width:3%;
-    top:230%;
-    left:47.5%;  /* 47-38 */
+    width: 3%;
+    top: 312%;
+    left:57.5%; /* 46-47.5-60 */
     rotate: 45deg;
 }
 
-#column{
+
+#buffer{
+    position: absolute;
+    width: 5%;
+    top: 50%;
+    left:57.5%; 
+}
+#tube {
 
     position: absolute;
-    width:4%;
-    top:50%;
-    left:55%;
+    width: 3%;
+    top: 370%;
+    left:80%;
 }
