@@ -16,9 +16,10 @@ Developer: Prakriti Dhang */
 
 #falcon {
     position: relative;
-    width: 5%;
+    width: 6%;
     top: 5%;
     left: 5%;
+    cursor: pointer;
 }
 
 #falconzoom {
@@ -26,6 +27,13 @@ Developer: Prakriti Dhang */
     width: 1%; /* 1-10 */
     top: 60%;
     left: 7%;
+}
+#falconzoom1 {
+    position: absolute;
+    width: 15%; /* 15 */
+    top: 2%;
+    left: 15%;
+display: none;
 }
 
 
@@ -39,25 +47,52 @@ Developer: Prakriti Dhang */
 #inject {
     position: absolute;
     width: 10%;
-    top: 288%; 
+    top: 265%; 
     left:50%; /*50-40 */
     rotate: 45deg;
+    cursor: pointer;
+    
 }
 
 #injection {
     position: absolute;
     width: 3%;
-    top: 312%;
-    left:57.5%; /* 46-47.5-60 */
+    top: 284%;
+    left:57.5%; /* 46-47.5-57.5 */
     rotate: 45deg;
+    cursor: pointer;
+    
 }
 
 
+#injectps {
+    position: absolute;
+    width: 10%;
+    top: 265%; 
+    left:50%; /*50-40 */
+    rotate: 45deg;
+    cursor: pointer;
+    display: none;
+    
+}
+
+#injectionps {
+    position: absolute;
+    width: 3%;
+    top: 284%;
+    left:57.5%; /* 46-47.5-57.5 */
+    rotate: 45deg;
+    cursor: pointer;
+    display: none;
+    
+}
+
 #buffer{
     position: absolute;
-    width: 5%;
+    width: 8%;
     top: 50%;
     left:57.5%; 
+    display: none;
 }
 #tube {
 
@@ -65,4 +100,20 @@ Developer: Prakriti Dhang */
     width: 3%;
     top: 370%;
     left:80%;
+}
+
+#canvascolumn{
+    position: absolute;
+    width: 1.5%;
+    height:116%;
+    top:185%;
+    left:80.4%;
+}
+
+#canvastube{
+    position: absolute;
+    width: 2.3%;
+    height:20%;
+    top:395%;
+    left:80.4%;
 }
