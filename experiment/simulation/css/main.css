@@ -105,12 +105,80 @@ display: none;
 #canvascolumn{
     position: absolute;
     width: 1.5%;
-    height:116%;
-    top:185%;
+    height:30%; /*113*/
+    top:270%; /*184 */
+    left:80.4%;
+z-index: 12;
+   
+}
+
+#canvascolumnpa{
+    position: absolute;
+    width: 1.5%;
+    height:48%;
+    top:248.8%;
+    left:80.4%;
+   z-index: 10;
+   
+}
+
+#canvascolumnpb{
+    position: absolute;
+    width: 1.5%;
+    height:71%;
+    top:226%;
+    left:80.4%;
+    z-index: 8;
+}
+#canvascolumnpc{
+    position: absolute;
+    width: 1.5%;
+    height:92%;
+    top:205%;
+    left:80.4%;
+    z-index: 6;
+}
+#canvascolumnpd{
+    position: absolute;
+    width: 1.5%;
+    height:113%;
+    top:184%;
     left:80.4%;
 }
 
+
 #canvastube{
+    position: absolute;
+    width: 2.3%;
+    height:20%;
+    top:395%;
+    left:80.4%;
+}
+
+#canvastubep1{
+    position: absolute;
+    width: 2.3%;
+    height:20%;
+    top:395%;
+    left:80.4%;
+}
+
+#canvastubep2{
+    position: absolute;
+    width: 2.3%;
+    height:20%;
+    top:395%;
+    left:80.4%;
+}
+
+#canvastubep3{
+    position: absolute;
+    width: 2.3%;
+    height:20%;
+    top:395%;
+    left:80.4%;
+}
+#canvastubep4{
     position: absolute;
     width: 2.3%;
     height:20%;
