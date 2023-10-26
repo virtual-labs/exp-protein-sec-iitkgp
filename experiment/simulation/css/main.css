@@ -24,16 +24,19 @@ Developer: Prakriti Dhang */
 
 #falconzoom {
     position: absolute;
-    width: 1%; /* 1-10 */
+    width: 1%;
+    /* 1-10 */
     top: 60%;
     left: 7%;
 }
+
 #falconzoom1 {
     position: absolute;
-    width: 15%; /* 15 */
+    width: 15%;
+    /* 15 */
     top: 2%;
     left: 15%;
-display: none;
+    display: none;
 }
 
 
@@ -47,141 +50,191 @@ display: none;
 #inject {
     position: absolute;
     width: 10%;
-    top: 265%; 
-    left:50%; /*50-40 */
+    top: 265%;
+    left: 50%;
+    /*50-40 */
     rotate: 45deg;
     cursor: pointer;
-    
+
 }
 
 #injection {
     position: absolute;
     width: 3%;
     top: 284%;
-    left:57.5%; /* 46-47.5-57.5 */
+    left: 57.5%;
+    /* 46-47.5-57.5 */
     rotate: 45deg;
     cursor: pointer;
-    
+
 }
 
 
 #injectps {
     position: absolute;
     width: 10%;
-    top: 265%; 
-    left:50%; /*50-40 */
+    top: 265%;
+    left: 50%;
+    /*50-40 */
     rotate: 45deg;
     cursor: pointer;
     display: none;
-    
+
 }
 
 #injectionps {
     position: absolute;
     width: 3%;
     top: 284%;
-    left:57.5%; /* 46-47.5-57.5 */
+    left: 57.5%;
+    /* 46-47.5-57.5 */
     rotate: 45deg;
     cursor: pointer;
     display: none;
-    
+
 }
 
-#buffer{
+#buffer {
     position: absolute;
     width: 8%;
     top: 50%;
-    left:57.5%; 
+    left: 57.5%;
     display: none;
 }
+
 #tube {
 
     position: absolute;
     width: 3%;
     top: 370%;
-    left:80%;
+    left: 80%;
 }
 
-#canvascolumn{
+#canvascolumn {
     position: absolute;
     width: 1.5%;
-    height:30%; /*113*/
-    top:270%; /*184 */
-    left:80.4%;
-z-index: 12;
-   
+    height: 28%;
+    /*113*/
+    top: 270%;
+    /*184 */
+    left: 80.4%;
+    z-index: 12;
+
 }
 
-#canvascolumnpa{
+#canvascolumnpa {
     position: absolute;
     width: 1.5%;
-    height:48%;
-    top:248.8%;
-    left:80.4%;
-   z-index: 10;
-   
+    height: 48%;
+    top: 248.8%;
+    left: 80.4%;
+    z-index: 10;
+
 }
 
-#canvascolumnpb{
+#canvascolumnpb {
     position: absolute;
     width: 1.5%;
-    height:71%;
-    top:226%;
-    left:80.4%;
+    height: 70%;
+    top: 226%;
+    left: 80.4%;
     z-index: 8;
 }
-#canvascolumnpc{
+
+#canvascolumnpc {
     position: absolute;
     width: 1.5%;
-    height:92%;
-    top:205%;
-    left:80.4%;
+    height: 92%;
+    top: 205%;
+    left: 80.4%;
     z-index: 6;
 }
-#canvascolumnpd{
+
+#canvascolumnpd {
     position: absolute;
     width: 1.5%;
-    height:113%;
-    top:184%;
-    left:80.4%;
+    height: 113%;
+    top: 184%;
+    left: 80.4%;
 }
 
 
-#canvastube{
+#canvastube {
     position: absolute;
     width: 2.3%;
-    height:20%;
-    top:395%;
-    left:80.4%;
+    height: 20%;
+    top: 395%;
+    left: 80.4%;
 }
 
-#canvastubep1{
+#canvastubep1 {
     position: absolute;
     width: 2.3%;
-    height:20%;
-    top:395%;
-    left:80.4%;
+    height: 20%;
+    top: 395%;
+    left: 80.4%;
 }
 
-#canvastubep2{
+#canvastubep2 {
     position: absolute;
     width: 2.3%;
-    height:20%;
-    top:395%;
-    left:80.4%;
+    height: 20%;
+    top: 395%;
+    left: 80.4%;
 }
 
-#canvastubep3{
+#canvastubep3 {
     position: absolute;
     width: 2.3%;
-    height:20%;
-    top:395%;
-    left:80.4%;
+    height: 20%;
+    top: 395%;
+    left: 80.4%;
 }
-#canvastubep4{
+
+#canvastubep4 {
     position: absolute;
     width: 2.3%;
-    height:20%;
-    top:395%;
-    left:80.4%;
+    height: 20%;
+    top: 395%;
+    left: 80.4%;
+}
+
+#bdrop {
+    position: absolute;
+    width: 2.3%;
+    top: 315%; /*315-395*/
+    left: 80.4%;
+    display: none;
+}
+
+#padrop {
+    position: absolute;
+    width: 2.3%;
+    top: 315%; /*315-395*/
+    left: 80.4%;
+    display: none;
+}
+
+#pbdrop {
+    position: absolute;
+    width: 2.3%;
+    top: 315%; /*315-395*/
+    left: 80.4%;
+    display: none;
+}
+
+#pcdrop {
+    position: absolute;
+    width: 2.3%;
+    top: 315%; /*315-395*/
+    left: 80.4%;
+    display: none;
+}
+
+#pddrop {
+    position: absolute;
+    width: 2.3%;
+    top: 315%; /*395*/
+    left: 80.4%;
+    display: none;
 }
