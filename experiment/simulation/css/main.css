@@ -241,10 +241,9 @@ Developer: Prakriti Dhang */
 }
 
 #bopt{
-    position: absolute;
+    position: relative;
     width: 3%;
-    height: 17%;
-    top: 128%;
+    top: 10%;
     left: 20%;
     display: none;
 }
@@ -253,8 +252,7 @@ Developer: Prakriti Dhang */
 #paopt{
     position: absolute;
     width: 3%;
-    height: 17%;
-    top: 128%;
+    top: 1%;
     left: 30%;
     display: none;
 }
@@ -262,24 +260,21 @@ Developer: Prakriti Dhang */
 #pbopt{
     position: absolute;
     width: 3%;
-    height: 17%;
-    top: 128%;
+    top: 1%;
     left: 40%;
     display: none;
 }
 #pcopt{
     position: absolute;
     width: 3%;
-    height: 17%;
-    top: 128%;
+    top: 1%;
     left: 50%;
     display: none;
 }
 #pdopt{
     position: absolute;
     width: 3%;
-    height: 17%;
-    top: 128%;
+    top: 1%;
     left: 60%;
     display: none;
 }

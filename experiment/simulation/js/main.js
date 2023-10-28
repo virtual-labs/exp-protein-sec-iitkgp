@@ -160,7 +160,7 @@ function showprotein() {
 var imgps = null;
 var imgpsi = null;
 function injectps() {
-
+  document.getElementById("step22").disabled = true;
 
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
@@ -201,7 +201,7 @@ var canvasp4, ctxgp4;
 
 var imgobjips = null;
 function injectpushps() {
-  document.getElementById("step22").disabled = true;
+  
   document.getElementById("Check2").checked = false;
   document.getElementById("canvascolumn").style.top=50 + "%";
   document.getElementById("canvascolumn").style.height=15 + "%";
@@ -393,6 +393,7 @@ var intervalpb;
 var intervalpc;
 var intervalpd;
 function elution() {
+  document.getElementById("step3").disabled = true;
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
   document.getElementById("step4").disabled = false;
   document.getElementById("canvascolumnpa").style.zIndex = 12;
