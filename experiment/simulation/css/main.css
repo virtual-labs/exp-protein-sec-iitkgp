@@ -113,10 +113,10 @@ Developer: Prakriti Dhang */
 #canvascolumn {
     position: absolute;
     width: 1.5%;
-    height: 28%;
-    /*113*/
-    top: 270%;
-    /*184 */
+    height: 113%;
+    /*28- 113*/
+    top: 184%;
+    /*270-184 */
     left: 80.4%;
     z-index: 12;
 
@@ -236,5 +236,49 @@ Developer: Prakriti Dhang */
     width: 2.3%;
     top: 315%; /*395*/
     left: 80.4%;
+    display: none;
+}
+
+#bopt{
+    position: absolute;
+    width: 3%;
+    height: 17%;
+    top: 128%;
+    left: 20%;
+    display: none;
+}
+
+
+#paopt{
+    position: absolute;
+    width: 3%;
+    height: 17%;
+    top: 128%;
+    left: 30%;
+    display: none;
+}
+
+#pbopt{
+    position: absolute;
+    width: 3%;
+    height: 17%;
+    top: 128%;
+    left: 40%;
+    display: none;
+}
+#pcopt{
+    position: absolute;
+    width: 3%;
+    height: 17%;
+    top: 128%;
+    left: 50%;
+    display: none;
+}
+#pdopt{
+    position: absolute;
+    width: 3%;
+    height: 17%;
+    top: 128%;
+    left: 60%;
     display: none;
 }

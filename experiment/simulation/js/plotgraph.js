@@ -9,7 +9,7 @@ function dataplot(){
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,  
 	title:{
-		text: "Testing Graph view"
+		text: "Protein Graph view"
 	},
 	axisY: {
 		title: "A (mAU)",
