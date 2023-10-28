@@ -56,7 +56,7 @@ function injectbuffer() {
   imgobj1 = setInterval(frame, 30);
 
   function frame() {
-    if (currentleft == 40) {
+    if (currentleft == 41) {
       clearInterval(imgobj1);
     }
     else {
@@ -67,7 +67,7 @@ function injectbuffer() {
   }
 
   function framei() {
-    if (currentlefti == 47) {
+    if (currentlefti == 48) {
       clearInterval(imgobj2);
       document.getElementById("injection").setAttribute("onclick", "injectpush()");
     }
@@ -88,14 +88,14 @@ var imgobj3 = null;
 function injectpush() {
   document.getElementById("Check1").checked = false;
   document.getElementById("buffer").style.display = "none";
-  var currentleft = 47;
+  var currentleft = 48;
   var image = document.getElementById("inject");
   var image1 = document.getElementById("injection");
   clearInterval(imgobj3);
   imgobj3 = setInterval(frame, 30);
 
   function frame() {
-    if (currentleft == 46) {
+    if (currentleft == 47) {
       clearInterval(imgobj3);
       image.style.zIndex = 12;
       document.getElementById("Check2").disabled = false;
@@ -170,7 +170,7 @@ function injectps() {
   imgps = setInterval(frame, 30);
 
   function frame() {
-    if (currentleft == 40) {
+    if (currentleft == 41) {
       clearInterval(imgps);
     }
     else {
@@ -181,7 +181,7 @@ function injectps() {
   }
 
   function framei() {
-    if (currentlefti == 47) {
+    if (currentlefti == 48) {
       clearInterval(imgpsi);
       document.getElementById("injectionps").setAttribute("onclick", "injectpushps()");
 
@@ -201,17 +201,18 @@ var canvasp4, ctxgp4;
 
 var imgobjips = null;
 function injectpushps() {
+  document.getElementById("step22").disabled = true;
   document.getElementById("Check2").checked = false;
-  document.getElementById("canvascolumn").style.top=270 + "%";
-  document.getElementById("canvascolumn").style.height=28 + "%";
-  var currentleft = 47;
+  document.getElementById("canvascolumn").style.top=50 + "%";
+  document.getElementById("canvascolumn").style.height=15 + "%";
+  var currentleft = 48;
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
   clearInterval(imgobjips);
   imgobjips = setInterval(frame, 30);
 
   function frame() {
-    if (currentleft == 46) {
+    if (currentleft == 47) {
       clearInterval(imgobjips);
       image.style.zIndex = 12;
       document.getElementById("Check2").disabled = true;
@@ -396,14 +397,14 @@ function elution() {
   document.getElementById("step4").disabled = false;
   document.getElementById("canvascolumnpa").style.zIndex = 12;
   //dropbuffer
-  var currenttop = 315;
+  var currenttop = 71;
   document.getElementById("bdrop").style.display = "block";
   var imageb = document.getElementById("bdrop");
   clearInterval(imgobjbuffer);
   imgobjbuffer = setInterval(frame, 30);
 
   function frame() {
-    if (currenttop == 380) {
+    if (currenttop == 85) {
       document.getElementById("bdrop").style.display = "none";
       clearInterval(imgobjbuffer);
       canvasstb = document.getElementById("canvastube");
@@ -454,9 +455,10 @@ function elution() {
 }
 
 function tubefillpa() {
- 
+  document.getElementById("canvastube").style.display = "none";
+  document.getElementById("bopt").style.display = "block";
   //dropproteina
-  var currenttoppa = 315;
+  var currenttoppa = 71;
   document.getElementById("padrop").style.display = "block";
   var imagepa = document.getElementById("padrop");
   cancelAnimationFrame(cancelani);
@@ -464,13 +466,13 @@ function tubefillpa() {
   imgobjipsa = setInterval(framepa, 30);
 
   function framepa() {
-    if (currenttoppa == 380) {
+    if (currenttoppa == 85) {
       document.getElementById("padrop").style.display = "none";
-      document.getElementById("bopt").style.display = "block";
+     
       clearInterval(imgobjipsa);
       clearInterval(intervalpa);
 
-      document.getElementById("canvastube").style.display = "none";
+      
       document.getElementById("canvascolumnpb").style.zIndex = 12;
       canvasst1 = document.getElementById("canvastubep1");
       ctxgst1 = canvasst1.getContext("2d");
@@ -521,9 +523,10 @@ function tubefillpa() {
 }
 
 function tubefillpb() {
- 
+  document.getElementById("canvastubep1").style.display = "none"; 
+  document.getElementById("paopt").style.display = "block";
   document.getElementById("padrop").style.display = "none";
-  var currenttoppb = 315;
+  var currenttoppb = 71;
   document.getElementById("pbdrop").style.display = "block";
   var imagepb = document.getElementById("pbdrop");
   
@@ -531,14 +534,14 @@ function tubefillpb() {
   imgobjipsb = setInterval(framepb, 30);
 
   function framepb() {
-    if (currenttoppb == 380) {
+    if (currenttoppb == 85) {
       document.getElementById("pbdrop").style.display = "none";
-      document.getElementById("paopt").style.display = "block";
+     
       clearInterval(imgobjipsb);
       clearInterval(intervalpb);
 
       //dropproteinb
-      document.getElementById("canvastubep1").style.display = "none";
+     
       document.getElementById("canvascolumnpc").style.zIndex = 12;
       canvasst2 = document.getElementById("canvastubep2");
       ctxgst2 = canvasst2.getContext("2d");
@@ -588,22 +591,23 @@ function tubefillpb() {
 
 
 function tubefillpc() {
- 
+  document.getElementById("canvastubep2").style.display = "none";
+  document.getElementById("pbopt").style.display = "block";
   document.getElementById("pbdrop").style.display = "none";
-  var currenttoppc = 315;
+  var currenttoppc = 71;
   document.getElementById("pcdrop").style.display = "block";
   var imagepc = document.getElementById("pcdrop");
   clearInterval(imgobjipsc);
   imgobjipsc = setInterval(framepc, 30);
 
   function framepc() {
-    if (currenttoppc == 380) {
+    if (currenttoppc == 85) {
       document.getElementById("pcdrop").style.display = "none";
-      document.getElementById("pbopt").style.display = "block";
+    
       clearInterval(imgobjipsc);
       clearInterval(intervalpc);
       //dropproteinc
-      document.getElementById("canvastubep2").style.display = "none";
+     
       document.getElementById("canvascolumnpd").style.zIndex = 12;
       canvasst3 = document.getElementById("canvastubep3");
       ctxgst3 = canvasst3.getContext("2d");
@@ -653,23 +657,24 @@ function tubefillpc() {
 
 
 function tubefillpd() {
- 
+  document.getElementById("canvastubep3").style.display = "none";
+  document.getElementById("pcopt").style.display = "block";
   document.getElementById("pcdrop").style.display = "none";
   //dropproteind
-  var currenttoppd = 315;
+  var currenttoppd = 71;
   document.getElementById("pddrop").style.display = "block";
   var imagepd = document.getElementById("pddrop");
   clearInterval(imgobjipsd);
   imgobjipsd = setInterval(framepd, 30);
 
   function framepd() {
-    if (currenttoppd == 380) {
+    if (currenttoppd == 85) {
       document.getElementById("pddrop").style.display = "none";
-      document.getElementById("pcopt").style.display = "block";
+     
       clearInterval(imgobjipsd);
       clearInterval(intervalpd);
 
-      document.getElementById("canvastubep3").style.display = "none";
+     
       // document.getElementById("canvascolumnpb").style.zIndex=12;
       canvasst4 = document.getElementById("canvastubep4");
       ctxgst4 = canvasst4.getContext("2d");

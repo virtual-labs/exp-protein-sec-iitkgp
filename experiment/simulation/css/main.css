@@ -41,8 +41,9 @@ Developer: Prakriti Dhang */
 
 
 #machine {
-    position: absolute;
-    width: 95%;
+    position: relative;
+    width: 98%;
+    height:80%;
     top: 150%;
     left: 3%;
 }
@@ -50,9 +51,9 @@ Developer: Prakriti Dhang */
 #inject {
     position: absolute;
     width: 10%;
-    top: 265%;
+    top: 60.5%; 
     left: 50%;
-    /*50-40 */
+    /*50-41 */
     rotate: 45deg;
     cursor: pointer;
 
@@ -61,9 +62,9 @@ Developer: Prakriti Dhang */
 #injection {
     position: absolute;
     width: 3%;
-    top: 284%;
-    left: 57.5%;
-    /* 46-47.5-57.5 */
+    top: 69.8%;
+    left: 57%;
+    /* 47-48-57.5 */
     rotate: 45deg;
     cursor: pointer;
 
@@ -73,9 +74,9 @@ Developer: Prakriti Dhang */
 #injectps {
     position: absolute;
     width: 10%;
-    top: 265%;
+    top: 60.5%;
     left: 50%;
-    /*50-40 */
+    /*50-41 */
     rotate: 45deg;
     cursor: pointer;
     display: none;
@@ -85,9 +86,9 @@ Developer: Prakriti Dhang */
 #injectionps {
     position: absolute;
     width: 3%;
-    top: 284%;
+    top: 69.5%;
     left: 57.5%;
-    /* 46-47.5-57.5 */
+    /* 47-48-57.5 */
     rotate: 45deg;
     cursor: pointer;
     display: none;
@@ -97,7 +98,7 @@ Developer: Prakriti Dhang */
 #buffer {
     position: absolute;
     width: 8%;
-    top: 50%;
+    top: 30%;
     left: 57.5%;
     display: none;
 }
@@ -106,18 +107,18 @@ Developer: Prakriti Dhang */
 
     position: absolute;
     width: 3%;
-    top: 370%;
-    left: 80%;
+    top: 85%;
+    left: 82%;
 }
 
 #canvascolumn {
     position: absolute;
     width: 1.5%;
-    height: 113%;
-    /*28- 113*/
-    top: 184%;
-    /*270-184 */
-    left: 80.4%;
+    height: 55%;
+    /*15- 55*/
+    top: 10%;
+    /*10-50*/
+    left: 83%;
     z-index: 12;
 
 }
@@ -125,9 +126,9 @@ Developer: Prakriti Dhang */
 #canvascolumnpa {
     position: absolute;
     width: 1.5%;
-    height: 48%;
-    top: 248.8%;
-    left: 80.4%;
+    height: 25%;
+    top: 40%;
+    left: 83%;
     z-index: 10;
 
 }
@@ -135,107 +136,107 @@ Developer: Prakriti Dhang */
 #canvascolumnpb {
     position: absolute;
     width: 1.5%;
-    height: 70%;
-    top: 226%;
-    left: 80.4%;
+    height: 35%;
+    top: 30%;
+    left: 83%;
     z-index: 8;
 }
 
 #canvascolumnpc {
     position: absolute;
     width: 1.5%;
-    height: 92%;
-    top: 205%;
-    left: 80.4%;
+    height: 45%;
+    top: 20%;
+    left: 83%;
     z-index: 6;
 }
 
 #canvascolumnpd {
     position: absolute;
     width: 1.5%;
-    height: 113%;
-    top: 184%;
-    left: 80.4%;
+    height: 55%;
+    top: 10%;
+    left: 83%;
 }
 
 
 #canvastube {
     position: absolute;
     width: 2.3%;
-    height: 20%;
-    top: 395%;
-    left: 80.4%;
+    height: 12%;
+    top: 93%;
+    left: 82.3%;
 }
 
 #canvastubep1 {
     position: absolute;
     width: 2.3%;
-    height: 20%;
-    top: 395%;
-    left: 80.4%;
+    height: 12%;
+    top: 93%;
+    left: 82.3%;
 }
 
 #canvastubep2 {
     position: absolute;
     width: 2.3%;
-    height: 20%;
-    top: 395%;
-    left: 80.4%;
+    height: 12%;
+    top: 93%;
+    left: 82.3%;
 }
 
 #canvastubep3 {
     position: absolute;
     width: 2.3%;
-    height: 20%;
-    top: 395%;
-    left: 80.4%;
+    height: 12%;
+    top: 93%;
+    left: 82.3%;
 }
 
 #canvastubep4 {
     position: absolute;
     width: 2.3%;
-    height: 20%;
-    top: 395%;
-    left: 80.4%;
+    height: 12%;
+    top: 93%;
+    left: 82.3%;
 }
 
 #bdrop {
     position: absolute;
     width: 2.3%;
-    top: 315%; /*315-395*/
-    left: 80.4%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
     display: none;
 }
 
 #padrop {
     position: absolute;
     width: 2.3%;
-    top: 315%; /*315-395*/
-    left: 80.4%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
     display: none;
 }
 
 #pbdrop {
     position: absolute;
     width: 2.3%;
-    top: 315%; /*315-395*/
-    left: 80.4%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
     display: none;
 }
 
 #pcdrop {
     position: absolute;
     width: 2.3%;
-    top: 315%; /*315-395*/
-    left: 80.4%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
     display: none;
 }
 
 #pddrop {
     position: absolute;
     width: 2.3%;
-    top: 315%; /*395*/
-    left: 80.4%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
     display: none;
 }
 

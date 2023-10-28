@@ -21,30 +21,33 @@ Developer: Prakriti Dhang-->
 <body>
 	<!-- Your code goes here-->
 	<div class="container-fluid p-2">
-<div class="row">
-		<div class="col-md-6">
-			<div class="card">
-				<div class="card-header fs-5 fw-bold">Instructions</div>
-				<div class="card-body">
-					<ol>
-						<li>Click on "Start the Experiment" button.
-						</li>
-						<li>Click on "Protein sample" button and on the falcon image.</li>
-						<li> Next click on the checkbox "Equilibration" and click "Inject buffer" button. Now, click on the injection's push button to inject the buffer through the column.
-						</li>
-						<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now, click on the injection's push button to inject the protiens through the column.</li>
-						<li>Now click on the "Elution" button. This will start separating the protein samples. The protein samples will be stored in the tubes.</li>
-					<li>Click on the "Data Acquisition" button to plot the sample graph</li>
-					</ol>
-					<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
-				</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Instructions</div>
+					<div class="card-body">
+						<ol>
+							<li>Click on "Start the Experiment" button.
+							</li>
+							<li>Click on "Protein sample" button and on the falcon image.</li>
+							<li> Next click on the checkbox "Equilibration" and click "Inject buffer" button. Now, click
+								on the injection's push button to inject the buffer through the column.
+							</li>
+							<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now,
+								click on the injection's push button to inject the protiens through the column.</li>
+							<li>Now click on the "Elution" button. This will start separating the protein samples. The
+								protein samples will be stored in the tubes.</li>
+							<li>Click on the "Data Acquisition" button to plot the sample graph</li>
+						</ol>
+						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
+					</div>
 
-			</div>
-			<div class="card">
-				<div class="card-header fs-5 fw-bold">Action</div>
-				<div class="card-body">
+				</div>
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Action</div>
+					<div class="card-body">
 					</div>
-					</div>
+				</div>
 			</div>
 
 			<div class="col-md-6">
@@ -59,43 +62,48 @@ Developer: Prakriti Dhang-->
 										style="cursor: pointer; " data-bs-toggle="modal"
 										data-bs-target="#exampleModal">Start the Experiment</button>
 
-										<button id="steprs" type="button"
-
+									<button id="steprs" type="button"
 										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; float:right "  onclick="restartexp()">Re-Do the Experiment</button>
+										style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
+										Experiment</button>
 								</td>
 							</tr>
-							
+
 							<tr>
 								<td class="fs-6">Step 1</td>
 								<td>
 									<button id="step1" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;  "  onclick="proteinsample()" disabled>Protein sample</button>
+										style="cursor: pointer;  " onclick="proteinsample()" disabled>Protein
+										sample</button>
 								</td>
 							</tr>
 							<tr>
 								<td class="fs-6">Step 2</td>
 								<td>
 									<div class="form-check form-check-inline">
-										<input class="custom-check-input" type="checkbox" value="" id="Check1" onclick="showbuffer()" disabled/>
+										<input class="custom-check-input" type="checkbox" value="" id="Check1"
+											onclick="showbuffer()" disabled />
 										<label class="custom-check-label" for="Check1">
-										Equilibration
+											Equilibration
 										</label>
-										</div>
+									</div>
 									<button id="step21" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; "  onclick="injectbuffer()" disabled>Inject Buffer</button>
-<br>
-										<div class="form-check form-check-inline">
-											<input class="custom-check-input" type="checkbox" value="" id="Check2"  onclick="showprotein()" disabled />
-											<label class="custom-check-label" for="Check2">
+										style="cursor: pointer; " onclick="injectbuffer()" disabled>Inject
+										Buffer</button>
+									<br>
+									<div class="form-check form-check-inline">
+										<input class="custom-check-input" type="checkbox" value="" id="Check2"
+											onclick="showprotein()" disabled />
+										<label class="custom-check-label" for="Check2">
 											Protein mixture
-											</label>
-											</div>
-										<button id="step22" type="button"
+										</label>
+									</div>
+									<button id="step22" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; "  onclick="injectps()" disabled>Inject Protein sample</button>
+										style="cursor: pointer; " onclick="injectps()" disabled>Inject Protein
+										sample</button>
 								</td>
 							</tr>
 							<tr>
@@ -103,7 +111,7 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step3" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;  "  onclick="elution()" disabled>Elution start</button>
+										style="cursor: pointer;  " onclick="elution()" disabled>Elution start</button>
 								</td>
 							</tr>
 							<tr>
@@ -111,97 +119,111 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step4" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;  "  onclick="dataplot()" disabled>Data acquisition</button>
+										style="cursor: pointer;  " onclick="dataplot()" disabled>Data
+										acquisition</button>
 								</td>
 							</tr>
-							</table>
-							</div>
-							</div>
-							</div>
-						</div>
-
-
-						<div class="row ">
-							<div class="col-md-6">
-								<div class="card card-body border border-0" >
-								
-									<div class="img-container">
-										<img src="./images/falcontube.png" id="falcon"  class="img-fluid" alt="falcon" >
-										<img src="./images/falconzoom.png"  id="falconzoom" class="img-fluid" alt="faclonzoom">
-										<img src="./images/falconzoom.png"  id="falconzoom1" class="img-fluid" alt="faclonzoom">
-										<img src="./images/buffer.png" id="buffer" class="img-fluid" >
-										<img src="./images/secmachine.png" id="machine"  class="img-fluid" alt="machine">
-<img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
-<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn">
-
-<img src="./images/inject.png" id="injectps" class="img-fluid" alt="inject">
-<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn">
-
-<img src="./images/tube.png" id="tube" class="img-fluid" alt="tube">
-<canvas width="10px" height="20px" id="canvascolumn" style="border: 0px solid black; "></canvas>
-<canvas width="10px" height="20px" id="canvascolumnpa" style="border: 0px solid black; "></canvas>
-<canvas width="10px" height="20px" id="canvascolumnpb" style="border: 0px solid black; "></canvas>
-<canvas width="10px" height="20px" id="canvascolumnpc" style="border: 0px solid black; "></canvas>
-<canvas width="10px" height="20px" id="canvascolumnpd" style="border: 0px solid black; "></canvas>
-
-<img src="./images/bufferdrop.png" id="bdrop" class="img-fluid" alt="bfdrop">
-<img src="./images/proadrop.png" id="padrop" class="img-fluid" alt="psadrop">
-<img src="./images/probdrop.png" id="pbdrop" class="img-fluid" alt="psbdrop">
-<img src="./images/procdrop.png" id="pcdrop" class="img-fluid" alt="pscdrop">
-<img src="./images/proddrop.png" id="pddrop" class="img-fluid" alt="psbdrop">
-<canvas width="10px" height="20px" id="canvastube" style="border: 0px solid black;"></canvas>
-<canvas width="10px" height="20px" id="canvastubep1" style="border: 0px solid black;"></canvas>
-<canvas width="10px" height="20px" id="canvastubep2" style="border: 0px solid black;"></canvas>
-<canvas width="10px" height="20px" id="canvastubep3" style="border: 0px solid black;"></canvas>
-<canvas width="10px" height="20px" id="canvastubep4" style="border: 0px solid black;"></canvas>
-
-										</div>
-										</div>
-										</div>
-
-				<div class="col-md-6">
-											<div class="card card-body border border-1">
-												<div id="chartContainer" style="height: 300px; width: 100%;"></div>
-											
-												<img src="./images/bufferopt.png" id="bopt" class="img-fluid" alt="bfdrop">
-<img src="./images/proaopt.png" id="paopt" class="img-fluid" alt="psadropopt">
-<img src="./images/probopt.png" id="pbopt" class="img-fluid" alt="psbdropopt">
-<img src="./images/procopt.png" id="pcopt" class="img-fluid" alt="pscdropopt">
-<img src="./images/prodopt.png" id="pdopt" class="img-fluid" alt="psbdropopt">
-											
-											</div>
-										</div>
-
-	
-</div>
-
-	<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Alert message: Viewing experience</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
-					<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
-						viewing experience.</p>
-				</div>
-				<div class="modal-footer">
-
-					<button type="button" class="btn btn-warning" onclick="start()" data-bs-dismiss="modal">OK</button>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Add JS at the bottom of HTML file -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-	<script src="./js/main.js"></script>
-	<script src="./js/plotgraph.js"></script>
+
+		<div class="row ">
+			<div class="col-md-6">
+				<div class="card card-body border border-0">
+
+					<div class="img-container">
+						<img src="./images/falcontube.png" id="falcon" class="img-fluid" alt="falcon">
+						<img src="./images/falconzoom.png" id="falconzoom" class="img-fluid" alt="faclonzoom">
+						<img src="./images/falconzoom.png" id="falconzoom1" class="img-fluid" alt="faclonzoom">
+						<img src="./images/buffer.png" id="buffer" class="img-fluid">
+					</div>
+				</div>
+
+				<div class="card card-body border border-0">
+
+					<div class="img-container">
+
+						<img src="./images/secmachine.png" id="machine" class="img-fluid" alt="machine">
+						<img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
+						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn">
+
+						<img src="./images/inject.png" id="injectps" class="img-fluid" alt="inject">
+						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn">
+
+						<img src="./images/tube.png" id="tube" class="img-fluid" alt="tube">
+						<canvas width="10px" height="20px" id="canvascolumn" style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpa"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpb"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpc"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpd"
+							style="border: 0px solid black; "></canvas>
+
+						<img src="./images/bufferdrop.png" id="bdrop" class="img-fluid" alt="bfdrop">
+						<img src="./images/proadrop.png" id="padrop" class="img-fluid" alt="psadrop">
+						<img src="./images/probdrop.png" id="pbdrop" class="img-fluid" alt="psbdrop">
+						<img src="./images/procdrop.png" id="pcdrop" class="img-fluid" alt="pscdrop">
+						<img src="./images/proddrop.png" id="pddrop" class="img-fluid" alt="psbdrop">
+						<canvas width="10px" height="20px" id="canvastube" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep1" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep2" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep3" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep4" style="border: 0px solid black;"></canvas>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body border border-1">
+					<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+				
+			
+					<img src="./images/bufferopt.png" id="bopt" class="img-fluid" alt="bfdrop">
+					<img src="./images/proaopt.png" id="paopt" class="img-fluid" alt="psadropopt">
+					<img src="./images/probopt.png" id="pbopt" class="img-fluid" alt="psbdropopt">
+					<img src="./images/procopt.png" id="pcopt" class="img-fluid" alt="pscdropopt">
+					<img src="./images/prodopt.png" id="pdopt" class="img-fluid" alt="psbdropopt">
+				</div>
+				
+			</div>
+
+
+		</div>
+
+		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message: Viewing experience</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
+						<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
+							viewing experience.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="start()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add JS at the bottom of HTML file -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/plotgraph.js"></script>
 </body>
 
 </html>
