@@ -46,22 +46,26 @@ document.getElementById('step4').addEventListener('click', function () {
 // Function to plot data using CanvasJS with spline
 function plotData(dataPoints) {
 	const chart = new CanvasJS.Chart("chartContainer", {
-		animationEnabled: true,  
+		animationEnabled: true,
 		title: {
 			text: "Absorbance Vs Volume"
 		},
 		axisY: {
 			title: "Absorbance (mAU)",
-			
-			
+			minimum: -2,
+			maximum: 15,
+			gridThickness: 0
+
 		},
 		axisX: {
 			title: "Volume in mL",
-			
-			
+			minimum: 1,
+			maximum: 120,
+
 		},
 		data: [{
 			type: "spline",
+			//lineColor:"orange",
 			dataPoints: dataPoints
 		}]
 	});
@@ -104,7 +108,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	},
 	axisY: {
 		title: "A (mAU)",
-      
+	  
 		valueFormatString: "#0,,.",
 		//suffix: "mn",
 		//stripLines: [{
@@ -112,16 +116,16 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		//	label: "Average"
 		//}]
 	},
-    axisX: {
+	axisX: {
 		title: "Volume (ml)",
-        //valueFormatString: "#0,,.",
-    },
+		//valueFormatString: "#0,,.",
+	},
 	data: [{
 		yValueFormatString: "",
 		xValueFormatString: "",
 		type: "spline",
 		dataPoints: [
-            {x: 2, y: 2506000},
+			{x: 2, y: 2506000},
 			{x: 3, y: 2506000},
 			{x: 4, y: 2506000},
 			{x:5, y: 2506000},
