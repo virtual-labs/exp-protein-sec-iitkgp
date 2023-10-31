@@ -746,19 +746,19 @@ window.onload = function () {
     },
     axisY: {
       title: "Absorbance (mAU)",
-      minimum: 0,
+      minimum: -2,
       maximum: 15,
-      
+      gridThickness: 0
 
     },
     axisX: {
       title: "Volume in mL",
-      minimum: 0,
+      minimum: 1,
       maximum: 120,
       crosshair: {
         enabled: false
-    }
-     
+      }
+
 
 
     },
