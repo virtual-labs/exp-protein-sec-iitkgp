@@ -52,14 +52,12 @@ function plotData(dataPoints) {
 		},
 		axisY: {
 			title: "Absorbance (mAU)",
-			minimum: -1,
-			maximum: 15
+			
 			
 		},
 		axisX: {
 			title: "Volume in mL",
-			minimum: 0,
-			maximum: 120
+			
 			
 		},
 		data: [{

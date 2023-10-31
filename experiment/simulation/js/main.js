@@ -746,7 +746,7 @@ window.onload = function () {
     },
     axisY: {
       title: "Absorbance (mAU)",
-      minimum: -5,
+      minimum: 0,
       maximum: 15,
       
 
@@ -755,7 +755,9 @@ window.onload = function () {
       title: "Volume in mL",
       minimum: 0,
       maximum: 120,
-      
+      crosshair: {
+        enabled: false
+    }
      
 
 
