@@ -8,7 +8,7 @@ function start() {
   document.getElementById("step1").disabled = false;
 }
 
-function restartexp(){
+function restartexp() {
   location.reload();
 }
 
@@ -201,10 +201,10 @@ var canvasp4, ctxgp4;
 
 var imgobjips = null;
 function injectpushps() {
-  
+
   document.getElementById("Check2").checked = false;
-  document.getElementById("canvascolumn").style.top=50 + "%";
-  document.getElementById("canvascolumn").style.height=15 + "%";
+  document.getElementById("canvascolumn").style.top = 50 + "%";
+  document.getElementById("canvascolumn").style.height = 15 + "%";
   var currentleft = 48;
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
@@ -442,7 +442,7 @@ function elution() {
         cancelani = requestAnimationFrame(loop);
       }
       requestAnimationFrame(loop);
-      intervalpa=  setInterval(tubefillpa, 4000);
+      intervalpa = setInterval(tubefillpa, 4000);
 
     }
     else {
@@ -469,11 +469,11 @@ function tubefillpa() {
   function framepa() {
     if (currenttoppa == 85) {
       document.getElementById("padrop").style.display = "none";
-     
+
       clearInterval(imgobjipsa);
       clearInterval(intervalpa);
 
-      
+
       document.getElementById("canvascolumnpb").style.zIndex = 12;
       canvasst1 = document.getElementById("canvastubep1");
       ctxgst1 = canvasst1.getContext("2d");
@@ -509,8 +509,8 @@ function tubefillpa() {
         cancelani = requestAnimationFrame(loopt1);
       }
       requestAnimationFrame(loopt1);
-     
-      intervalpb=  setInterval(tubefillpb, 4000);
+
+      intervalpb = setInterval(tubefillpb, 4000);
     }
 
     else {
@@ -524,25 +524,25 @@ function tubefillpa() {
 }
 
 function tubefillpb() {
-  document.getElementById("canvastubep1").style.display = "none"; 
+  document.getElementById("canvastubep1").style.display = "none";
   document.getElementById("paopt").style.display = "block";
   document.getElementById("padrop").style.display = "none";
   var currenttoppb = 71;
   document.getElementById("pbdrop").style.display = "block";
   var imagepb = document.getElementById("pbdrop");
-  
+
   clearInterval(imgobjipsb);
   imgobjipsb = setInterval(framepb, 30);
 
   function framepb() {
     if (currenttoppb == 85) {
       document.getElementById("pbdrop").style.display = "none";
-     
+
       clearInterval(imgobjipsb);
       clearInterval(intervalpb);
 
       //dropproteinb
-     
+
       document.getElementById("canvascolumnpc").style.zIndex = 12;
       canvasst2 = document.getElementById("canvastubep2");
       ctxgst2 = canvasst2.getContext("2d");
@@ -578,7 +578,7 @@ function tubefillpb() {
         cancelani = requestAnimationFrame(loopt2);
       }
       requestAnimationFrame(loopt2);
-      intervalpc=   setInterval(tubefillpc, 4000);
+      intervalpc = setInterval(tubefillpc, 4000);
     }
 
     else {
@@ -604,11 +604,11 @@ function tubefillpc() {
   function framepc() {
     if (currenttoppc == 85) {
       document.getElementById("pcdrop").style.display = "none";
-    
+
       clearInterval(imgobjipsc);
       clearInterval(intervalpc);
       //dropproteinc
-     
+
       document.getElementById("canvascolumnpd").style.zIndex = 12;
       canvasst3 = document.getElementById("canvastubep3");
       ctxgst3 = canvasst3.getContext("2d");
@@ -644,7 +644,7 @@ function tubefillpc() {
         cancelani = requestAnimationFrame(loopt3);
       }
       requestAnimationFrame(loopt3);
-      intervalpd=  setInterval(tubefillpd, 4000);
+      intervalpd = setInterval(tubefillpd, 4000);
     }
     else {
       currenttoppc++;
@@ -671,11 +671,11 @@ function tubefillpd() {
   function framepd() {
     if (currenttoppd == 85) {
       document.getElementById("pddrop").style.display = "none";
-     
+
       clearInterval(imgobjipsd);
       clearInterval(intervalpd);
 
-     
+
       // document.getElementById("canvascolumnpb").style.zIndex=12;
       canvasst4 = document.getElementById("canvastubep4");
       ctxgst4 = canvasst4.getContext("2d");
@@ -742,25 +742,26 @@ window.onload = function () {
   var chart = new CanvasJS.Chart("chartContainer", {
     animationEnabled: true,
     title: {
-      text: "Protein Graph view"
+      text: "Absorbance Vs Volume"
     },
     axisY: {
-      title: "A (mAU)",
+      title: "Absorbance (mAU)",
+      minimum: -5,
+      maximum: 15,
+      
 
-      valueFormatString: "#0,,.",
-      //suffix: "mn",
-      //stripLines: [{
-      //	value: 3366500,
-      //	label: "Average"
-      //}]
     },
     axisX: {
-      title: "Volume (ml)",
-      //valueFormatString: "#0,,.",
+      title: "Volume in mL",
+      minimum: 0,
+      maximum: 120,
+      
+     
+
+
     },
     data: [{
-      yValueFormatString: "#,### Units",
-      xValueFormatString: "Y",
+
       type: "spline",
       dataPoints: [
 

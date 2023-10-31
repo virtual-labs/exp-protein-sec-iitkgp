@@ -3,7 +3,100 @@ Exp name: Protein purification by size exclusion chromatography (SEC)
 File name: main.js
 Developer: Prakriti Dhang */
 
-function dataplot(){
+
+
+
+document.getElementById('step4').addEventListener('click', function () {
+	// Specify the URL of your Excel file
+	const excelUrl = './plotdata/proteindata.xlsx';
+
+	const xhr = new XMLHttpRequest();
+	xhr.open('GET', excelUrl, true);
+	xhr.responseType = 'arraybuffer';
+
+	xhr.onload = function () {
+		if (xhr.status === 200) {
+			const data = new Uint8Array(xhr.response);
+			const workbook = XLSX.read(data, { type: 'array' });
+
+			// Assuming the data is in the first sheet
+			const sheetName = workbook.SheetNames[0];
+			const worksheet = workbook.Sheets[sheetName];
+
+			// Convert worksheet to JSON
+			const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+			// Prepare data for plotting
+			const dataPoints = jsonData.map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[1]) }));
+
+			// Plot the data using CanvasJS with spline
+			plotData(dataPoints);
+		} else {
+			console.error('Error fetching the file:', xhr.statusText);
+		}
+	};
+
+	xhr.onerror = function () {
+		console.error('Network error while fetching the file.');
+	};
+
+	xhr.send();
+});
+
+// Function to plot data using CanvasJS with spline
+function plotData(dataPoints) {
+	const chart = new CanvasJS.Chart("chartContainer", {
+		animationEnabled: true,  
+		title: {
+			text: "Absorbance Vs Volume"
+		},
+		axisY: {
+			title: "Absorbance (mAU)",
+			minimum: -1,
+			maximum: 15
+			
+		},
+		axisX: {
+			title: "Volume in mL",
+			minimum: 0,
+			maximum: 120
+			
+		},
+		data: [{
+			type: "spline",
+			dataPoints: dataPoints
+		}]
+	});
+
+	chart.render();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function dataplot(){
     
 
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -51,4 +144,4 @@ var chart = new CanvasJS.Chart("chartContainer", {
 });
 chart.render();
 
-}
+}*/
