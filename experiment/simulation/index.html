@@ -119,8 +119,16 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step4" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer;  " disabled>Data
+										style="cursor: pointer; " disabled >Data
 										acquisition</button> <!--onclick="dataplot()"-->
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-6">Step 5</td>
+								<td>
+									<button id="step5" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " disabled>Analyzed</button> <!--onclick="dataplot()"-->
 								</td>
 							</tr>
 						</table>
@@ -138,7 +146,7 @@ Developer: Prakriti Dhang-->
 						<img src="./images/falcontube.png" id="falcon" class="img-fluid" alt="falcon">
 						<img src="./images/falconzoom.png" id="falconzoom" class="img-fluid" alt="faclonzoom">
 						<img src="./images/falconzoom.png" id="falconzoom1" class="img-fluid" alt="faclonzoom">
-						<img src="./images/buffer.png" id="buffer" class="img-fluid">
+						
 					</div>
 				</div>
 
@@ -147,9 +155,9 @@ Developer: Prakriti Dhang-->
 					<div class="img-container">
 
 						<img src="./images/secmachine.png" id="machine" class="img-fluid" alt="machine">
-						<img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
-						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn">
-
+						<!--img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
+						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn"-->
+						<img src="./images/buffer.png" id="buffer" class="img-fluid">
 						<img src="./images/inject.png" id="injectps" class="img-fluid" alt="inject">
 						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn">
 
@@ -180,6 +188,14 @@ Developer: Prakriti Dhang-->
 			</div>
 
 			<div class="col-md-6">
+			
+
+				<div class="card card-body border border-1">
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+
+
+
+				</div>
 				<div class="card card-body border border-0">
 					<div class="img-container">
 						<img src="./images/bufferopt.png" id="bopt" class="img-fluid" alt="bfdrop">
@@ -189,14 +205,6 @@ Developer: Prakriti Dhang-->
 						<img src="./images/prodopt.png" id="pdopt" class="img-fluid" alt="psbdropopt">
 					</div>
 				</div>
-
-				<div class="card card-body border border-1">
-					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
-
-
-
-				</div>
-
 			</div>
 
 

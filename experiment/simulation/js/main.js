@@ -38,17 +38,18 @@ function zoomprotein() {
 }
 
 function showbuffer() {
-  document.getElementById("buffer").style.display = "block";
+  //document.getElementById("buffer").style.display = "block";
   document.getElementById("step21").disabled = false;
 }
 
-var imgobj1 = null;
-var imgobj2 = null;
+//var imgobj1 = null;
+//var imgobj2 = null;
 function injectbuffer() {
 
 
   document.getElementById("step21").disabled = true;
-  var image = document.getElementById("inject");
+  document.getElementById("buffer").setAttribute("onclick", "injectpush()");
+ /* var image = document.getElementById("inject");
   var image1 = document.getElementById("injection");
   var currentleft = 50;
   var currentlefti = 57;
@@ -76,28 +77,25 @@ function injectbuffer() {
       image1.style.left = currentlefti + '%';
 
     }
-  }
-  /*image.style.left= 40+ "%";
-  var image1 = document.getElementById("injection");
-  image1.style.left= 47.5+ "%";
-  document.getElementById("injection").setAttribute("onclick", "injectpush()");
-*/
+  }*/
+ 
 }
 var canvass11, ctxgs11;
 var imgobj3 = null;
 function injectpush() {
+  document.getElementById("step21").disabled = true;
   document.getElementById("Check1").checked = false;
-  document.getElementById("buffer").style.display = "none";
-  var currentleft = 48;
-  var image = document.getElementById("inject");
-  var image1 = document.getElementById("injection");
-  clearInterval(imgobj3);
-  imgobj3 = setInterval(frame, 30);
+  //document.getElementById("buffer").style.display = "none";
+ // var currentleft = 48;
+ // var image = document.getElementById("inject");
+  //var image1 = document.getElementById("injection");
+ // clearInterval(imgobj3);
+ // imgobj3 = setInterval(frame, 30);
 
-  function frame() {
-    if (currentleft == 47) {
-      clearInterval(imgobj3);
-      image.style.zIndex = 12;
+ // function frame() {
+  //  if (currentleft == 47) {
+  //    clearInterval(imgobj3);
+   //   image.style.zIndex = 12;
       document.getElementById("Check2").disabled = false;
       document.getElementById("Check1").disabled = true;
       canvass11 = document.getElementById("canvascolumn");
@@ -135,13 +133,13 @@ function injectpush() {
       }
       requestAnimationFrame(loop);
 
-    }
-    else {
-      currentleft--;
-      image1.style.left = currentleft + '%';
+  //  }
+  //  else {
+   //   currentleft--;
+   //   image1.style.left = currentleft + '%';
 
-    }
-  }
+   // }
+ // }
   /* var image = document.getElementById("inject");
    var image1 = document.getElementById("injection");
    image1.style.left= 46+ "%";
@@ -150,8 +148,8 @@ function injectpush() {
 function showprotein() {
   document.getElementById("falconzoom").style.display = "none";
   document.getElementById("step22").disabled = false;
-  document.getElementById("inject").style.display = "none";
-  document.getElementById("injection").style.display = "none";
+ // document.getElementById("inject").style.display = "none";
+ // document.getElementById("injection").style.display = "none";
   document.getElementById("injectps").style.display = "block";
   document.getElementById("injectionps").style.display = "block";
 
@@ -395,7 +393,7 @@ var intervalpd;
 function elution() {
   document.getElementById("step3").disabled = true;
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
-  document.getElementById("step4").disabled = false;
+ 
   document.getElementById("canvascolumnpa").style.zIndex = 12;
   //dropbuffer
   var currenttop = 71;
@@ -671,7 +669,7 @@ function tubefillpd() {
   function framepd() {
     if (currenttoppd == 85) {
       document.getElementById("pddrop").style.display = "none";
-
+      document.getElementById("canvascolumnpd").style.display = "none";
       clearInterval(imgobjipsd);
       clearInterval(intervalpd);
 
@@ -711,7 +709,7 @@ function tubefillpd() {
         cancelani = requestAnimationFrame(loopt4);
       }
       requestAnimationFrame(loopt4);
-      setInterval(tubefillpd1, 2000);
+      setInterval(tubefillpd1, 3000);
     }
 
     else {
@@ -730,9 +728,10 @@ function tubefillpd1() {
   document.getElementById("canvascolumnpa").style.display = "none";
   document.getElementById("canvascolumnpb").style.display = "none";
   document.getElementById("canvascolumnpc").style.display = "none";
-  document.getElementById("canvascolumnpd").style.display = "none";
+ 
   document.getElementById("canvastubep4").style.display = "none";
   document.getElementById("pddrop").style.display = "none";
+  document.getElementById("step4").disabled = false;
 }
 
 //}
