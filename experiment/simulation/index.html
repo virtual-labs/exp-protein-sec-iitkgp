@@ -30,14 +30,16 @@ Developer: Prakriti Dhang-->
 							<li>Click on "Start the Experiment" button.
 							</li>
 							<li>Click on "Protein sample" button and on the falcon image.</li>
-							<li> Next click on the checkbox "Equilibration" and click "Add buffer" button. Now click on the buffer bottle to pass the buffer through the column.
+							<li> Next click on the checkbox "Equilibration" and click "Add buffer" button. Set the time to 120 mins and 
+								 flow rate to 1 ml/min .
+								 Now click on the buffer bottle to pass the buffer through the column.
 							</li>
 							<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now,
 								click on the injection's push button to inject the protiens through the column.</li>
 							<li>Now click on the "Elution" button. This will start separating the protein samples. The
 								protein samples will be stored in the tubes.</li>
-							<li>Click on the "Data Acquisition" button to plot the sample graph</li>
-							<li>Click on the "Analyzed using SDS-PAGE gel" button and on "Show" button to view the gel.</li>
+							<li>Click on the "Data Acquisition" button to plot the Absorbance Vs Volume graph</li>
+							<li>Click on the "SDS-PAGE analysis" button and on "Show" button to view the gel.</li>
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -132,7 +134,7 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step5" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="analyzed()" disabled>Analyzed using SDS-PAGE gel</button> <!--onclick="dataplot()"-->
+										style="cursor: pointer; " onclick="analyzed()" disabled>SDS-PAGE analysis</button> <!--onclick="dataplot()"-->
 								</td>
 							</tr>
 						</table>
@@ -159,6 +161,12 @@ Developer: Prakriti Dhang-->
 					<div class="img-container">
 
 						<img src="./images/secmachine.png" id="machine" class="img-fluid" alt="machine">
+
+						
+
+						<input type="text"  class="form-control form-control-inline" id="inpttime" placeholder="Time (min)"> 
+						<input type="number" class="form-control form-control-inline" min="0" max="10" id="inptfrate" placeholder="Flow rate (ml/min)"> 
+
 						<!--img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
 						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn"-->
 						<img src="./images/buffer.png" id="buffer" class="img-fluid">
@@ -177,10 +185,10 @@ Developer: Prakriti Dhang-->
 							style="border: 0px solid black; "></canvas>
 
 						<img src="./images/bufferdrop.png" id="bdrop" class="img-fluid" alt="bfdrop">
-						<img src="./images/proadrop.png" id="padrop" class="img-fluid" alt="psadrop">
-						<img src="./images/probdrop.png" id="pbdrop" class="img-fluid" alt="psbdrop">
-						<img src="./images/procdrop.png" id="pcdrop" class="img-fluid" alt="pscdrop">
-						<img src="./images/proddrop.png" id="pddrop" class="img-fluid" alt="psbdrop">
+						<img src="./images/bufferdrop.png" id="padrop" class="img-fluid" alt="psadrop">
+						<img src="./images/bufferdrop.png" id="pbdrop" class="img-fluid" alt="psbdrop">
+						<img src="./images/bufferdrop.png" id="pcdrop" class="img-fluid" alt="pscdrop">
+						<img src="./images/bufferdrop.png" id="pddrop" class="img-fluid" alt="psbdrop">
 						<canvas width="10px" height="20px" id="canvastube" style="border: 0px solid black;"></canvas>
 						<canvas width="10px" height="20px" id="canvastubep1" style="border: 0px solid black;"></canvas>
 						<canvas width="10px" height="20px" id="canvastubep2" style="border: 0px solid black;"></canvas>
@@ -200,7 +208,7 @@ Developer: Prakriti Dhang-->
 
 
 				</div>
-				<div class="card card-body border border-0">
+				<!--div class="card card-body border border-0">
 					<div class="img-container">
 						<img src="./images/bufferopt.png" id="bopt" class="img-fluid" alt="bfdrop">
 						<img src="./images/proaopt.png" id="paopt" class="img-fluid" alt="psadropopt">
@@ -208,7 +216,7 @@ Developer: Prakriti Dhang-->
 						<img src="./images/procopt.png" id="pcopt" class="img-fluid" alt="pscdropopt">
 						<img src="./images/prodopt.png" id="pdopt" class="img-fluid" alt="psbdropopt">
 					</div>
-				</div>
+				</div-->
 			</div>
 
 
@@ -220,6 +228,7 @@ Developer: Prakriti Dhang-->
 			<div class="col-md-4">
 				<div class="card card-body border border-0">
 				<div class="img-container">
+					<img src="./images/ladder.png" id="ladder" class="img-fluid" alt="ladder">
 				<img src="./images/outputgel.png" id="optgel" class="img-fluid" alt="outputgel">
 			</div>
 			</div>
