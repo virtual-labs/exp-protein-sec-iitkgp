@@ -7,6 +7,7 @@ Developer: Prakriti Dhang */
 
 
 document.getElementById('step4').addEventListener('click', function () {
+	document.getElementById("actionid").innerHTML="Data acquisition";
 	// Specify the URL of your Excel file
 	const excelUrl = './plotdata/proteindata.xlsx';
 

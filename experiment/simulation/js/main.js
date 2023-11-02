@@ -20,14 +20,15 @@ function proteinsample() {
 }
 
 function zoomprotein() {
+  document.getElementById("actionid").innerHTML="Sample consists of mixture of proteins.";
   var image = document.getElementById("falconzoom");
 
   // Function to increase width
 
   var currentWidth = image.width;
-  var newWidth = currentWidth + 12; // You can adjust the value as needed
+  var newWidth = currentWidth + 8; // You can adjust the value as needed
   image.style.width = newWidth + "%";
-  image.style.top = 2 + "%";
+  image.style.top = 1 + "%";
   image.style.left = 7 + "%";
 
 
@@ -45,7 +46,7 @@ function showbuffer() {
 //var imgobj1 = null;
 //var imgobj2 = null;
 function injectbuffer() {
-
+document.getElementById("actionid").innerHTML="Column is equibrated with buffer.";
 
   document.getElementById("step21").disabled = true;
   document.getElementById("buffer").setAttribute("onclick", "injectpush()");
@@ -152,7 +153,7 @@ function showprotein() {
  // document.getElementById("injection").style.display = "none";
   document.getElementById("injectps").style.display = "block";
   document.getElementById("injectionps").style.display = "block";
-
+  document.getElementById("actionid").innerHTML="Protien is injected in the column.";
 }
 
 var imgps = null;
@@ -391,6 +392,7 @@ var intervalpb;
 var intervalpc;
 var intervalpd;
 function elution() {
+  document.getElementById("actionid").innerHTML="Elution started.";
   document.getElementById("step3").disabled = true;
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
  
@@ -405,6 +407,7 @@ function elution() {
   function frame() {
     if (currenttop == 85) {
       document.getElementById("bdrop").style.display = "none";
+      document.getElementById("actionid").innerHTML="Elution started: Buffer is collected.";
       clearInterval(imgobjbuffer);
       canvasstb = document.getElementById("canvastube");
       ctxgstb = canvasstb.getContext("2d");
@@ -467,6 +470,7 @@ function tubefillpa() {
   function framepa() {
     if (currenttoppa == 85) {
       document.getElementById("padrop").style.display = "none";
+      document.getElementById("actionid").innerHTML="Elution started: Protein 1 is collected.";
 
       clearInterval(imgobjipsa);
       clearInterval(intervalpa);
@@ -535,6 +539,7 @@ function tubefillpb() {
   function framepb() {
     if (currenttoppb == 85) {
       document.getElementById("pbdrop").style.display = "none";
+      document.getElementById("actionid").innerHTML="Elution started: Protein 2 is collected.";
 
       clearInterval(imgobjipsb);
       clearInterval(intervalpb);
@@ -602,6 +607,7 @@ function tubefillpc() {
   function framepc() {
     if (currenttoppc == 85) {
       document.getElementById("pcdrop").style.display = "none";
+      document.getElementById("actionid").innerHTML="Elution started: Protein 3 is collected.";
 
       clearInterval(imgobjipsc);
       clearInterval(intervalpc);
@@ -670,6 +676,7 @@ function tubefillpd() {
     if (currenttoppd == 85) {
       document.getElementById("pddrop").style.display = "none";
       document.getElementById("canvascolumnpd").style.display = "none";
+      document.getElementById("actionid").innerHTML="Elution started: Protein 4 is collected.";
       clearInterval(imgobjipsd);
       clearInterval(intervalpd);
 
@@ -731,7 +738,8 @@ function tubefillpd1() {
  
   document.getElementById("canvastubep4").style.display = "none";
   document.getElementById("pddrop").style.display = "none";
-  document.getElementById("step4").disabled = false;
+  document.getElementById("step4").disabled = true;
+  document.getElementById("step5").disabled = false;
 }
 
 //}
@@ -771,4 +779,15 @@ window.onload = function () {
   });
   chart.render();
 
+}
+
+function analyzed(){
+  document.getElementById("actionid").innerHTML="The proteins are further analyzed using SDS-PAGE gel";
+  document.getElementById("stepgel").style.display="block";
+ 
+}
+
+function showgel(){
+  document.getElementById("optgel").style.display="block";
+  window.scrollBy(0,300);
 }
