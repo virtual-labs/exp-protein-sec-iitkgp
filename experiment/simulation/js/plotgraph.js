@@ -7,7 +7,7 @@ Developer: Prakriti Dhang */
 
 
 document.getElementById('step4').addEventListener('click', function () {
-	document.getElementById("actionid").innerHTML="Data acquisition";
+	document.getElementById("actionid").innerHTML="The absorbance (A280) of the sample is analyzed using a detector.";
 	document.getElementById("step5").disabled = false;
 	// Specify the URL of your Excel file
 	const excelUrl = './plotdata/proteindata.xlsx';
@@ -65,13 +65,36 @@ function plotData(dataPoints) {
 			maximum: 120,
 
 		},
+
 		data: [{
+            type: "spline",
+            dataPoints: dataPoints // <-- Correct placement
+
+            // Individual data points with correct syntax
+        }, {
+            type: "spline",
+			lineColor:"white",
+            dataPoints: [
+                { x: 62.277, y: 11.246, indexLabel: "A", indexLabelFontColor: "orangered", indexLabelPlacement:"outside" },
+                { x: 73.879, y: 11.525, indexLabel: "B", indexLabelFontColor: "orangered" },
+                { x: 87.214, y: 13.799, indexLabel: "C", indexLabelFontColor: "orangered" },
+                { x: 96.015, y: 14.134, indexLabel: "D", indexLabelFontColor: "orangered" }
+            ]
+        }]
+    });
+		/*data: [{
 			type: "spline",
 			//lineColor:"orange",
 			dataPoints: dataPoints
-		}]
+			[{ x: 62.277, y: 11.246, indexLabel: "A", indexLabelFontColor: "orangered" },
+			{ x: 73.879, y: 11.525, indexLabel: "B", indexLabelFontColor: "orangered" },
+			{ x: 87.214, y: 13.799, indexLabel: "C", indexLabelFontColor: "orangered" },
+			{ x: 95.749, y: 13.927, indexLabel: "D", indexLabelFontColor: "orangered" }
+		]
+		}
+	]
 	});
-
+*/
 	chart.render();
 }
 

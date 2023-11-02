@@ -5,6 +5,7 @@ Developer: Prakriti Dhang */
 
 
 function start() {
+  document.getElementById("step0").disabled = true;
   document.getElementById("step1").disabled = false;
 }
 
@@ -13,14 +14,14 @@ function restartexp() {
 }
 
 function proteinsample() {
-
+  document.getElementById("actionid").innerHTML="The sample consists of a mixture of proteins of different molecular weight and size";
   document.getElementById("falcon").setAttribute("onclick", "zoomprotein()");
   document.getElementById("step1").disabled = true;
   document.getElementById("Check1").disabled = false;
 }
 
 function zoomprotein() {
-  document.getElementById("actionid").innerHTML="Sample consists of mixture of proteins.";
+  document.getElementById("actionid").innerHTML="The sample consists of a mixture of proteins of different molecular weight and size";
   var image = document.getElementById("falconzoom");
 
   // Function to increase width
@@ -46,7 +47,8 @@ function showbuffer() {
 //var imgobj1 = null;
 //var imgobj2 = null;
 function injectbuffer() {
-document.getElementById("actionid").innerHTML="Column is equibrated with buffer.";
+//document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibartion.";
+
 
   document.getElementById("step21").disabled = true;
   document.getElementById("buffer").setAttribute("onclick", "injectpush()");
@@ -84,8 +86,15 @@ document.getElementById("actionid").innerHTML="Column is equibrated with buffer.
 var canvass11, ctxgs11;
 var imgobj3 = null;
 function injectpush() {
+  var inputtime=document.getElementById("inpttime").value;
+  var inputflowrate=document.getElementById("inptfrate").value;
+  
+  if((inputtime == "120") && (inputflowrate == "1")){
+  
+
   document.getElementById("step21").disabled = true;
   document.getElementById("Check1").checked = false;
+  document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibartion.";
   //document.getElementById("buffer").style.display = "none";
  // var currentleft = 48;
  // var image = document.getElementById("inject");
@@ -133,6 +142,16 @@ function injectpush() {
         cancelani = requestAnimationFrame(loop);
       }
       requestAnimationFrame(loop);
+    }
+    else if(inputtime != "120"){
+      alert("Please set the time to 120 mins ");
+    }
+    else if(inputflowrate != "1"){
+      alert("Please set flow rate to 1 ml/min");
+    }
+    else{
+      alert("Please set  the time to 120 mins and flow rate to 1 ml/min");
+    }
 
   //  }
   //  else {
@@ -153,12 +172,13 @@ function showprotein() {
  // document.getElementById("injection").style.display = "none";
   document.getElementById("injectps").style.display = "block";
   document.getElementById("injectionps").style.display = "block";
-  document.getElementById("actionid").innerHTML="Protien is injected in the column.";
+  
 }
 
 var imgps = null;
 var imgpsi = null;
 function injectps() {
+  document.getElementById("actionid").innerHTML="Protien is injected in the column.";
   document.getElementById("step22").disabled = true;
 
   var image = document.getElementById("injectps");
@@ -229,7 +249,7 @@ function injectpushps() {
       function drawLinep1() {
 
 
-        ctxgp1.strokeStyle = '#B1008E';
+        ctxgp1.strokeStyle = '#5D8DFF';
         ctxgp1.lineWidth = 600;
         ctxgp1.beginPath();
         ctxgp1.moveTo(0, posYp1); /*  */
@@ -268,7 +288,7 @@ function injectpushps() {
       function drawLinep2() {
 
 
-        ctxgp2.strokeStyle = '#61D9FF';
+        ctxgp2.strokeStyle = '#5D8DFF';
         ctxgp2.lineWidth = 600;
         ctxgp2.beginPath();
         ctxgp2.moveTo(0, posYp2); /*  */
@@ -306,7 +326,7 @@ function injectpushps() {
       function drawLinep3() {
 
 
-        ctxgp3.strokeStyle = '#73FE32';
+        ctxgp3.strokeStyle = '#5D8DFF';
         ctxgp3.lineWidth = 600;
         ctxgp3.beginPath();
         ctxgp3.moveTo(0, posYp3); /*  */
@@ -342,7 +362,7 @@ function injectpushps() {
       function drawLinep4() {
 
 
-        ctxgp4.strokeStyle = ' #FEDC32 ';
+        ctxgp4.strokeStyle = ' #5D8DFF ';
         ctxgp4.lineWidth = 600;
         ctxgp4.beginPath();
         ctxgp4.moveTo(0, posYp4); /*  */
@@ -458,7 +478,7 @@ function elution() {
 
 function tubefillpa() {
   document.getElementById("canvastube").style.display = "none";
-  document.getElementById("bopt").style.display = "block";
+  //document.getElementById("bopt").style.display = "block";
   //dropproteina
   var currenttoppa = 71;
   document.getElementById("padrop").style.display = "block";
@@ -470,7 +490,7 @@ function tubefillpa() {
   function framepa() {
     if (currenttoppa == 85) {
       document.getElementById("padrop").style.display = "none";
-      document.getElementById("actionid").innerHTML="Elution started: Protein 1 is collected.";
+      document.getElementById("actionid").innerHTML="Elution started: Protein A is collected.";
 
       clearInterval(imgobjipsa);
       clearInterval(intervalpa);
@@ -487,7 +507,7 @@ function tubefillpa() {
       function drawLinet1() {
 
 
-        ctxgst1.strokeStyle = '#B1008E';
+        ctxgst1.strokeStyle = '#5D8DFF '; //B1008E
         ctxgst1.lineWidth = 600;
         ctxgst1.beginPath();
         ctxgst1.moveTo(0, posYt1); /*  */
@@ -527,7 +547,7 @@ function tubefillpa() {
 
 function tubefillpb() {
   document.getElementById("canvastubep1").style.display = "none";
-  document.getElementById("paopt").style.display = "block";
+ // document.getElementById("paopt").style.display = "block";
   document.getElementById("padrop").style.display = "none";
   var currenttoppb = 71;
   document.getElementById("pbdrop").style.display = "block";
@@ -539,7 +559,7 @@ function tubefillpb() {
   function framepb() {
     if (currenttoppb == 85) {
       document.getElementById("pbdrop").style.display = "none";
-      document.getElementById("actionid").innerHTML="Elution started: Protein 2 is collected.";
+      document.getElementById("actionid").innerHTML="Elution started: Protein B is collected.";
 
       clearInterval(imgobjipsb);
       clearInterval(intervalpb);
@@ -557,7 +577,7 @@ function tubefillpb() {
       function drawLinet2() {
 
 
-        ctxgst2.strokeStyle = '#61D9FF';
+        ctxgst2.strokeStyle = '#5D8DFF '; //61D9FF
         ctxgst2.lineWidth = 600;
         ctxgst2.beginPath();
         ctxgst2.moveTo(0, posYt2); /*  */
@@ -596,7 +616,7 @@ function tubefillpb() {
 
 function tubefillpc() {
   document.getElementById("canvastubep2").style.display = "none";
-  document.getElementById("pbopt").style.display = "block";
+ // document.getElementById("pbopt").style.display = "block";
   document.getElementById("pbdrop").style.display = "none";
   var currenttoppc = 71;
   document.getElementById("pcdrop").style.display = "block";
@@ -607,7 +627,7 @@ function tubefillpc() {
   function framepc() {
     if (currenttoppc == 85) {
       document.getElementById("pcdrop").style.display = "none";
-      document.getElementById("actionid").innerHTML="Elution started: Protein 3 is collected.";
+      document.getElementById("actionid").innerHTML="Elution started: Protein C is collected.";
 
       clearInterval(imgobjipsc);
       clearInterval(intervalpc);
@@ -624,7 +644,7 @@ function tubefillpc() {
       function drawLinet3() {
 
 
-        ctxgst3.strokeStyle = '#73FE32';
+        ctxgst3.strokeStyle = '#5D8DFF '; //73FE32
         ctxgst3.lineWidth = 600;
         ctxgst3.beginPath();
         ctxgst3.moveTo(0, posYt3); /*  */
@@ -663,7 +683,7 @@ function tubefillpc() {
 
 function tubefillpd() {
   document.getElementById("canvastubep3").style.display = "none";
-  document.getElementById("pcopt").style.display = "block";
+ // document.getElementById("pcopt").style.display = "block";
   document.getElementById("pcdrop").style.display = "none";
   //dropproteind
   var currenttoppd = 71;
@@ -680,7 +700,7 @@ function tubefillpd() {
       document.getElementById("canvascolumnpb").style.display = "none";
       document.getElementById("canvascolumnpc").style.display = "none";
       document.getElementById("canvascolumnpd").style.display = "none";
-      document.getElementById("actionid").innerHTML="Elution started: Protein 4 is collected.";
+      document.getElementById("actionid").innerHTML="Elution started: Protein D is collected.";
       clearInterval(imgobjipsd);
       clearInterval(intervalpd);
 
@@ -696,7 +716,7 @@ function tubefillpd() {
       function drawLinet4() {
 
 
-        ctxgst4.strokeStyle = '#FEDC32';
+        ctxgst4.strokeStyle = '#5D8DFF '; //#FEDC32
         ctxgst4.lineWidth = 600;
         ctxgst4.beginPath();
         ctxgst4.moveTo(0, posYt4); /*  */
@@ -734,13 +754,13 @@ function tubefillpd() {
 }
 
 function tubefillpd1() {
-  document.getElementById("pdopt").style.display = "block";
+  //document.getElementById("pdopt").style.display = "block";
   document.getElementById("canvascolumn").style.display = "none";
   document.getElementById("canvascolumnpa").style.display = "none";
   document.getElementById("canvascolumnpb").style.display = "none";
   document.getElementById("canvascolumnpc").style.display = "none";
  
-  document.getElementById("canvastubep4").style.display = "none";
+  document.getElementById("canvastubep4").style.display = "block";
   document.getElementById("pddrop").style.display = "none";
   document.getElementById("step4").disabled = false;
   
@@ -786,12 +806,13 @@ window.onload = function () {
 }
 
 function analyzed(){
-  document.getElementById("actionid").innerHTML="The proteins are further analyzed using SDS-PAGE gel";
+  document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight";
   document.getElementById("stepgel").style.display="block";
  
 }
 
 function showgel(){
   document.getElementById("optgel").style.display="block";
+  document.getElementById("ladder").style.display="block";
   window.scrollBy(0,300);
 }
