@@ -675,6 +675,10 @@ function tubefillpd() {
   function framepd() {
     if (currenttoppd == 85) {
       document.getElementById("pddrop").style.display = "none";
+      document.getElementById("canvascolumn").style.display = "none";
+      document.getElementById("canvascolumnpa").style.display = "none";
+      document.getElementById("canvascolumnpb").style.display = "none";
+      document.getElementById("canvascolumnpc").style.display = "none";
       document.getElementById("canvascolumnpd").style.display = "none";
       document.getElementById("actionid").innerHTML="Elution started: Protein 4 is collected.";
       clearInterval(imgobjipsd);
