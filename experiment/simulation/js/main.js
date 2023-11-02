@@ -814,5 +814,5 @@ function analyzed(){
 function showgel(){
   document.getElementById("optgel").style.display="block";
   document.getElementById("ladder").style.display="block";
-  window.scrollBy(0,300);
+  window.scrollBy(0,500);
 }
