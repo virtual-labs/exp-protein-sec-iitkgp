@@ -738,8 +738,8 @@ function tubefillpd1() {
  
   document.getElementById("canvastubep4").style.display = "none";
   document.getElementById("pddrop").style.display = "none";
-  document.getElementById("step4").disabled = true;
-  document.getElementById("step5").disabled = false;
+  document.getElementById("step4").disabled = false;
+  
 }
 
 //}
