@@ -30,14 +30,14 @@ Developer: Prakriti Dhang-->
 							<li>Click on "Start the Experiment" button.
 							</li>
 							<li>Click on "Protein sample" button and on the falcon image.</li>
-							<li> Next click on the checkbox "Equilibration" and click "Inject buffer" button. Now, click
-								on the injection's push button to inject the buffer through the column.
+							<li> Next click on the checkbox "Equilibration" and click "Add buffer" button. Now click on the buffer bottle to pass the buffer through the column.
 							</li>
 							<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now,
 								click on the injection's push button to inject the protiens through the column.</li>
 							<li>Now click on the "Elution" button. This will start separating the protein samples. The
 								protein samples will be stored in the tubes.</li>
 							<li>Click on the "Data Acquisition" button to plot the sample graph</li>
+							<li>Click on the "Analyzed using SDS-PAGE gel" button and on "Show" button to view the gel.</li>
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -46,6 +46,10 @@ Developer: Prakriti Dhang-->
 				<div class="card">
 					<div class="card-header fs-5 fw-bold">Action</div>
 					<div class="card-body">
+						<p class="fs-5" id="actionid"></p>
+						<button id="stepgel" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float:right; display: none;" onclick="showgel()">Show</button>
 					</div>
 				</div>
 			</div>
@@ -90,7 +94,7 @@ Developer: Prakriti Dhang-->
 									</div>
 									<button id="step21" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="injectbuffer()" disabled>Inject
+										style="cursor: pointer; " onclick="injectbuffer()" disabled>Add
 										Buffer</button>
 									<br>
 									<div class="form-check form-check-inline">
@@ -128,7 +132,7 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step5" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " disabled>Analyzed</button> <!--onclick="dataplot()"-->
+										style="cursor: pointer; " onclick="analyzed()" disabled>Analyzed using SDS-PAGE gel</button> <!--onclick="dataplot()"-->
 								</td>
 							</tr>
 						</table>
@@ -209,6 +213,19 @@ Developer: Prakriti Dhang-->
 
 
 		</div>
+
+
+		<div class="row ">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="card card-body border border-0">
+				<div class="img-container">
+				<img src="./images/outputgel.png" id="optgel" class="img-fluid" alt="outputgel">
+			</div>
+			</div>
+				</div>
+				<div class="col-md-4"></div>
+				</div>
 
 		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">

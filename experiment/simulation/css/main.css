@@ -99,7 +99,7 @@ Developer: Prakriti Dhang */
     top: 9%;
     left: 24.4%;
     display: block;
-    opacity: 0.7;
+    opacity: 0.8;
     cursor:pointer;
    
 }
@@ -277,5 +277,13 @@ Developer: Prakriti Dhang */
     width: 5%;
     top: 1%;
     left: 80%;
+    display: none;
+}
+
+#optgel{
+    position: relative;
+    width:60%;
+    top: 1%;
+    left: 10%;
     display: none;
 }
