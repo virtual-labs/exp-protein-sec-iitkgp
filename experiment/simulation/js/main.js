@@ -806,12 +806,13 @@ window.onload = function () {
 }
 
 function analyzed(){
-  document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight";
+  document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel.";
   document.getElementById("stepgel").style.display="block";
  
 }
 
 function showgel(){
+  document.getElementById("actionid").innerHTML="The proteins have been separated on the basis of their molecular weight and displayed at the bottom of the page.";
   document.getElementById("optgel").style.display="block";
   document.getElementById("ladder").style.display="block";
   window.scrollBy(0,500);
