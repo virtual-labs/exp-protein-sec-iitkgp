@@ -812,7 +812,8 @@ function analyzed(){
 }
 
 function showgel(){
-  document.getElementById("actionid").innerHTML="The proteins have been separated on the basis of their molecular weight and displayed at the bottom of the page.";
+ 
+  document.getElementById("actionid").innerHTML="The proteins have been separated on the basis of their molecular weight.";
   document.getElementById("optgel").style.display="block";
   document.getElementById("ladder").style.display="block";
   document.getElementById("stepgel").disabled=true;

@@ -283,16 +283,16 @@ Developer: Prakriti Dhang */
 
 #ladder{
     position: relative;
-    width:40%; /*60*/
+    width:30%; /*60*/
     top: 1%;
     left: 10%;
     display: none;
 }
 #optgel{
     position: absolute;
-    width:40%; /*60*/
+    width:30%; /*60*/
     top: 1%;
-    left: 50%;
+    left: 40%;
     display: none;
 }
 
