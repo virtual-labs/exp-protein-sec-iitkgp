@@ -115,9 +115,9 @@ Developer: Prakriti Dhang */
 #canvascolumn {
     position: absolute;
     width: 1.5%;
-    height: 51%;
-    /*15- 55*/
-    top: 14.5%;
+    height:51%;
+    /*15- 51*/
+    top: 14.6%; /*14.5*/
     /*10-50*/
     left: 82.8%;
     z-index: 12;
@@ -281,16 +281,16 @@ Developer: Prakriti Dhang */
 }
 
 
-#ladder{
+/* #ladder{
     position: relative;
-    width:30%; /*60*/
+    width:30%; 
     top: 1%;
     left: 10%;
     display: none;
-}
+} */
 #optgel{
-    position: absolute;
-    width:30%; /*60*/
+    position: relative;
+    width:35%; /*60*/
     top: 1%;
     left: 40%;
     display: none;

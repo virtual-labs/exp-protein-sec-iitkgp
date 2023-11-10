@@ -35,11 +35,11 @@ Developer: Prakriti Dhang-->
 								 Now click on the buffer bottle to pass the buffer through the column.
 							</li>
 							<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now,
-								click on the injection's push button to inject the protiens through the column.</li>
+								click on the plunger to inject the protiens through the column.</li>
 							<li>Now click on the "Elution" button. This will start separating the proteins. The
 								proteins will be stored in the tubes.</li>
 							<li>Click on the "Data Acquisition" button to plot the Absorbance Vs Volume graph</li>
-							<li>Click on the "SDS-PAGE analysis" button. To view the gel, scroll down after clicking "Show" button.</li>
+							<li>Click on the "SDS-PAGE analysis" button. To view the gel, click on "Show" button.</li>
 						</ol>
 						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
@@ -49,9 +49,7 @@ Developer: Prakriti Dhang-->
 					<div class="card-header fs-5 fw-bold">Action</div>
 					<div class="card-body">
 						<p class="fs-5" id="actionid"></p>
-						<button id="stepgel" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; float:right; display: none;" onclick="showgel()">Show</button>
+						
 					</div>
 				</div>
 			</div>
@@ -134,7 +132,10 @@ Developer: Prakriti Dhang-->
 								<td>
 									<button id="step5" type="button"
 										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
-										style="cursor: pointer; " onclick="analyzed()" disabled>SDS-PAGE analysis</button> <!--onclick="dataplot()"-->
+										style="cursor: pointer; " onclick="analyzed()" disabled>SDS-PAGE analysis</button> 
+										<button id="stepgel" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;  display: none;" onclick="showgel()">Show</button><!--onclick="dataplot()"-->
 								</td>
 							</tr>
 						</table>
@@ -228,8 +229,8 @@ Developer: Prakriti Dhang-->
 			<div class="col-md-6">
 				<div class="card card-body border border-0">
 				<div class="img-container">
-					<img src="./images/ladder.png" id="ladder" class="img-fluid" alt="ladder">
-				<img src="./images/sds-page image.png" id="optgel" class="img-fluid" alt="outputgel">
+				
+				<img src="./images/outputgel.png" id="optgel" class="img-fluid" alt="outputgel">
 			</div>
 			</div>
 				</div>
