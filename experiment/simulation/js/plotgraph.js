@@ -9,8 +9,36 @@ Developer: Prakriti Dhang */
 document.getElementById('step4').addEventListener('click', function () {
 	document.getElementById("actionid").innerHTML="The absorbance (A280) of the sample is analyzed using a detector.";
 	document.getElementById("step5").disabled = false;
-	// Specify the URL of your Excel file
 	const excelUrl = './plotdata/proteindata.xlsx';
+
+fetch(excelUrl)
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.arrayBuffer();
+  })
+  .then(data => {
+    const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
+    
+    // Assuming the data is in the first sheet
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+
+    // Convert worksheet to JSON
+    const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+
+    // Prepare data for plotting
+    const dataPoints = jsonData.map(row => ({ x: parseFloat(row[0]), y: parseFloat(row[1]) }));
+
+    // Plot the data using CanvasJS with spline
+    plotData(dataPoints);
+  })
+  .catch(error => {
+    console.error('Error fetching the file:', error.message);
+  });
+	// Specify the URL of your Excel file
+	/*const excelUrl = './plotdata/proteindata.xlsx';
 
 	const xhr = new XMLHttpRequest();
 	xhr.open('GET', excelUrl, true);
@@ -42,7 +70,7 @@ document.getElementById('step4').addEventListener('click', function () {
 		console.error('Network error while fetching the file.');
 	};
 
-	xhr.send();
+	xhr.send();*/
 });
 
 // Function to plot data using CanvasJS with spline
