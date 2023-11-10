@@ -94,7 +94,7 @@ function injectpush() {
 
   document.getElementById("step21").disabled = true;
   document.getElementById("Check1").checked = false;
-  document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibartion.";
+  document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibration.";
   //document.getElementById("buffer").style.display = "none";
  // var currentleft = 48;
  // var image = document.getElementById("inject");
@@ -222,8 +222,8 @@ var imgobjips = null;
 function injectpushps() {
 
   document.getElementById("Check2").checked = false;
-  document.getElementById("canvascolumn").style.top = 50 + "%";
-  document.getElementById("canvascolumn").style.height = 15 + "%";
+  document.getElementById("canvascolumn").style.top = 20.5 + "%"; //50
+  document.getElementById("canvascolumn").style.height = 45 + "%";//15
   var currentleft = 48;
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
@@ -415,7 +415,7 @@ function elution() {
   document.getElementById("actionid").innerHTML="Elution started.";
   document.getElementById("step3").disabled = true;
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
- 
+  document.getElementById("canvascolumn").style.display = "none";
   document.getElementById("canvascolumnpa").style.zIndex = 12;
   //dropbuffer
   var currenttop = 71;
@@ -806,16 +806,17 @@ window.onload = function () {
 }
 
 function analyzed(){
-  document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel.";
+  document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight.";
   document.getElementById("stepgel").style.display="block";
  
 }
 
 function showgel(){
  
-  document.getElementById("actionid").innerHTML="The proteins have been separated on the basis of their molecular weight.";
-  document.getElementById("optgel").style.display="block";
-  document.getElementById("ladder").style.display="block";
-  document.getElementById("stepgel").disabled=true;
   
+  document.getElementById("optgel").style.display="block";
+ 
+  document.getElementById("stepgel").disabled=true;
+ window.scrollBy(0,800);
+
 }
