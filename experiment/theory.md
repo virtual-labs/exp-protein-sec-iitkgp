@@ -9,7 +9,7 @@ Size exclusion chromatography is used to separate protein molecules based on dif
 In order to separate the protein mixture by size exclusion chromatography, the resin is packed into a column to form a packed bed. The resin consists of a porous matrix of chemically and physically stable spherical particles that exhibit inertness and minimize the adsorption of biomolecules. The column is equilibrated with a buffer which fills the pores of the matrix and the space in between the particles. The liquid inside the pores(stationary phase), is in equilibrium with the liquid (buffer or mobile phase) outside the particles. The protein sample is eluted isocratically as the buffer composition remains constant throughout the experiment. After sample application, the separation takes place as one column volume of buffer (equivalent to the volume of the packed bed) passes through the column. Protein molecules that are larger in size than the largest pores in the matrix cannot enter the pores and are eluted in the void volume as they pass directly through the column. The void volume is approximately equal to 30% of the total column volume. Protein molecules that can partially access the pores elute from the column in order of decreasing size. Small molecules of salts that have entered the pores usually elute right before one column volume of buffer has passed through the column.
 
 <div align="center">
-<img src="./images/Chromatogram representing SEC.png" width="50%">
+<img src="./images/Chromatogram representing SEC.png" class="img-fluid">
 <p>Figure 1  : Chromatogram representing size exclusion chromatography</p>
 </div>
 

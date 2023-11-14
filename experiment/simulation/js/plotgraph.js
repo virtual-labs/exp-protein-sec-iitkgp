@@ -124,6 +124,9 @@ function plotData(dataPoints) {
 	});
 */
 	chart.render();
+	/*document.getElementById("exportChart").addEventListener("click",function(){
+		chart.exportChart({format: "jpg"});
+	  });  */
 }
 
 
