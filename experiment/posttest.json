@@ -2,35 +2,112 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. In a mixture of the four proteins listed below, which would elute second in size exclusion chromatography",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Cytochrome- 13kDa",
+        "b": "Immunoglobulin- 14.5 kDa",
+        "c": "Ribonuclease- 13.7 kDa",
+        "d": "RNA polymerase – 45 kDa"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What are the important factors to be considered while preparing buffer for size exclusion chromatography?",
+      "answers": {
+        "a": "Buffer must be compatible with protein stability and activity",
+        "b": "Buffer must be degassed",
+        "c": "Buffer must be filtered",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which is the best size exclusion chromatographic media for high resolution, short run time and high recovery?",
+      "answers": {
+        "a": "Sephadex",
+        "b": "Superose",
+        "c": "Sephacryl",
+        "d": "Superdex"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Superdex media is made by",
+      "answers": {
+        "a": "Cross-linking dextran",
+        "b": "Cross linking dextran with agarose",
+        "c": "Cross-linking porous agarose",
+        "d": "None of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Analytical size exclusion chromatography is used for",
+      "answers": {
+        "a": "Desalting",
+        "b": "Check the quality of the sample",
+        "c": "Isolate one or more components from a sample",
+        "d": "All of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following chromatographic resin is used for desalting and buffer exchange?",
+      "answers": {
+        "a": "Sephadex",
+        "b": "Superose",
+        "c": "Sephacryl",
+        "d": "Superdex"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "7. What can be the possible reasons behind protein molecules not eluting as expected?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Column is not equilibrated properly",
+        "b": "Protein has precipitated on the column",
+        "c": "Column is overloaded with sample",
+        "d": "All of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. What can cause low recovery of protein activity but normal recovery of protein molecules after purification using size exclusion chromatography?",
+      "answers": {
+        "a": "Protein molecule is unstable or inactive in the buffer used",
+        "b": "Protein has been degraded by proteases",
+        "c": "Column is not equilibrated properly",
+        "d": "High flow rate of buffer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. The eluted protein fractions after performing size exclusion chromatography can be analyzed using",
+      "answers": {
+        "a": "Agarose gel electrophoresis",
+        "b": "EMSA",
+        "c": "SDS PAGE",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Which of the following solution can be used for cleaning size exclusion chromatography column?",
+      "answers": {
+        "a": "1M NaOH",
+        "b": "30 % Isopropanol",
+        "c": "Both (a) and( b)",
+        "d": "None of the above"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
