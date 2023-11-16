@@ -16,8 +16,8 @@
     {
       "question": "2. In size exclusion chromatography, molecules are separated on the basis of their",
       "answers": {
-        "a": "Size",
-        "b": "Size and shape",
+        "a": "Molecular weight",
+        "b": "Hydrodynamic volume",
         "c": "Charge",
         "d": "Adsorptive properties"
       },
@@ -28,7 +28,7 @@
     {
       "question": "3. Effective separation of the protein sample through the size exclusion chromatography column depends on a number of factors ",
       "answers": {
-        "a": "Particle size",
+        "a": "Pore size",
         "b": "Viscosity of sample and buffer",
         "c": "Packing density of the column",
         "d": "All of the above"
