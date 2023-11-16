@@ -2,17 +2,18 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. In a mixture of the four proteins listed below, which would elute second in size exclusion chromatography",
+      "question": "1. Another term for size exclusion chromatography is:",
       "answers": {
-        "a": "Cytochrome- 13kDa",
-        "b": "Immunoglobulin- 14.5 kDa",
-        "c": "Ribonuclease- 13.7 kDa",
-        "d": "RNA polymerase – 45 kDa"
+        "a": "Affinity chromatography",
+        "b": "Desalting",
+        "c": "Gel filtration chromatography",
+        "d": "Ion exchange chromatography"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
+   
     {
       "question": "2. What are the important factors to be considered while preparing buffer for size exclusion chromatography?",
       "answers": {
@@ -25,16 +26,19 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. Which is the best size exclusion chromatographic media for high resolution, short run time and high recovery?",
+      "question": "3. In a mixture of the four proteins listed below, which would elute second in size exclusion chromatography",
       "answers": {
-        "a": "Sephadex",
-        "b": "Superose",
-        "c": "Sephacryl",
-        "d": "Superdex"
+        "a": "Cytochrome- 13kDa",
+        "b": "Immunoglobulin- 145 kDa",
+        "c": "Ribonuclease- 13.7 kDa",
+        "d": "RNA polymerase – 45 kDa"
       },
+      
       "correctAnswer": "d",
       "difficulty": "beginner"
     },
+
+  
     {
       "question": "4. Superdex media is made by",
       "answers": {
@@ -54,18 +58,18 @@
         "c": "Isolate one or more components from a sample",
         "d": "All of the above"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "6. Which of the following chromatographic resin is used for desalting and buffer exchange?",
+      "question": "6. The absorbance of which amino acid is predominantly detected by the UV detector in size exclusion chromatography?",
       "answers": {
-        "a": "Sephadex",
-        "b": "Superose",
-        "c": "Sephacryl",
-        "d": "Superdex"
+        "a": "Histidine",
+        "b": "Proline",
+        "c": "Tryptophan",
+        "d": "Glutamine"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
