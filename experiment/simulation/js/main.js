@@ -144,13 +144,19 @@ function injectpush() {
       requestAnimationFrame(loop);
     }
     else if(inputtime != "120"){
-      alert("Please set the time to 120 mins ");
+     
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set the time to 120 mins');
     }
     else if(inputflowrate != "1"){
-      alert("Please set flow rate to 1 ml/min");
+      
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set flow rate to 1 ml/min');
     }
     else{
-      alert("Please set  the time to 120 mins and flow rate to 1 ml/min");
+  
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set  the time to 120 mins and flow rate to 1 ml/min');
     }
 
   //  }
@@ -165,6 +171,15 @@ function injectpush() {
    image1.style.left= 46+ "%";
    image.style.zIndex= 12;*/
 }
+
+
+
+function cancelmsg() {
+  document.getElementById("alertModal").style.display = "none";
+  document.getElementById("alertModal").classList.remove("show");
+}
+
+
 function showprotein() {
   document.getElementById("falconzoom").style.display = "none";
   document.getElementById("step22").disabled = false;
@@ -392,6 +407,42 @@ function injectpushps() {
     else {
       currentleft--;
       image1.style.left = currentleft + '%';
+      
+
+    /*canvass11 = document.getElementById("injectioncolumnin");
+    ctxgs11 = canvass11.getContext("2d");
+    var posX = 80;
+    var speed = 2;
+
+
+
+    function drawLine() {
+
+
+      ctxgs11.strokeStyle = 'white';
+      ctxgs11.lineWidth = 600;
+      ctxgs11.beginPath();
+      ctxgs11.moveTo(posX, 0); 
+      ctxgs11.lineTo(0, 0);
+      ctxgs11.stroke();
+    }
+
+    function moveLine() {
+      posX += speed;
+
+      if (posX < 0 || posX > canvass11.height) {
+        speed = speed * -1;
+      }
+    }
+
+    function loop() {
+      // clear old frame;
+      //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+      moveLine();
+      drawLine();
+      cancelani = requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);*/
 
     }
   }

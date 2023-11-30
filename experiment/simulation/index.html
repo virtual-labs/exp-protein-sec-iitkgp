@@ -186,6 +186,8 @@ Developer: Prakriti Dhang-->
 						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn">
 
 						<img src="./images/tube.png" id="tube" class="img-fluid" alt="tube">
+						<!--canvas  id="injectioncolumnin" style="border: 1px solid black; "></canvas-->
+
 						<canvas width="10px" height="20px" id="canvascolumn" style="border: 0px solid black; "></canvas>
 						<canvas width="10px" height="20px" id="canvascolumnpa"
 							style="border: 0px solid black; "></canvas>
@@ -268,6 +270,26 @@ Developer: Prakriti Dhang-->
 				</div>
 			</div>
 		</div>
+
+
+		<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+	
+						<button type="button" class="btn btn-warning" onclick="cancelmsg()" data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- Add JS at the bottom of HTML file -->
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
