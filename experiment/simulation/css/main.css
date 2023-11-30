@@ -81,6 +81,18 @@ Developer: Prakriti Dhang */
 
 }
 
+/*#injectioncolumnin{
+    position: absolute;
+    width: 3%;
+    height:3%;
+    top: 72.3%;
+    left: 43.2%;
+    z-index: 12;
+    display: block;
+    transform: rotate(180deg);
+}*/
+
+
 #injectionps {
     position: absolute;
     width: 3%;
