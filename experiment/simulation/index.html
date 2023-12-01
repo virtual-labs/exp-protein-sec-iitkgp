@@ -161,7 +161,7 @@ Developer: Prakriti Dhang-->
 				<div class="card card-body border border-0">
 
 					<div class="img-container">
-						<img src="./images/falcontube.png" id="falcon" class="img-fluid" alt="falcon">
+						<img src="./images/falcontube.png" id="falcon" class="img-fluid" alt="falcon" data-toggle="tooltip" data-placement="top" title="Falcon">
 						<img src="./images/falconzoom.png" id="falconzoom" class="img-fluid" alt="faclonzoom">
 						<img src="./images/falconzoom.png" id="falconzoom1" class="img-fluid" alt="faclonzoom">
 						
@@ -183,7 +183,7 @@ Developer: Prakriti Dhang-->
 						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn"-->
 						<img src="./images/buffer.png" id="buffer" class="img-fluid">
 						<img src="./images/inject.png" id="injectps" class="img-fluid" alt="inject">
-						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn">
+						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn" data-toggle="tooltip" data-placement="top" title="Plunger">
 
 						<img src="./images/tube.png" id="tube" class="img-fluid" alt="tube">
 						<!--canvas  id="injectioncolumnin" style="border: 1px solid black; "></canvas-->
@@ -299,6 +299,12 @@ Developer: Prakriti Dhang-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 		<script src="./js/main.js"></script>
 		<script src="./js/plotgraph.js"></script>
+
+		<script>
+			$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+		</script>
 </body>
 
 </html>
