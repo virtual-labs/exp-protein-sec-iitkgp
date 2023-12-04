@@ -30,3 +30,13 @@ Samples are then eluted isocratically using a single buffer on the basis of thei
 
 
 6. **Care of size exclusion chromatography medium:** When a size exclusion chromatography medium has been in use for some time, it is necessary to remove precipitated proteins or other contaminants. We need to clean the column when there is an appearance of a coloured band at the top of the column, a space between the upper adaptor and the bed surface,  a loss in resolution of protein peaks, or a significant increase in back pressure in the column. Cleaning with filtered NaOH (0.5M-1M)  is highly efficient, prolongs column life, and minimizes the risk of contamination between runs
+
+
+
+
+## Simulation Instrument Setup
+
+<div align="center">
+<img src="./images/lsetupsimulation.png" class="img-fluid">
+
+</div>
