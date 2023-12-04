@@ -48,6 +48,23 @@ Developer: Prakriti Dhang */
     left: 3%;
 }
 
+#colholder{
+    position: absolute;
+    width: 3%;
+    top: 23.7%; 
+    left: 82%; 
+    z-index: 15;
+    
+}
+#colholder1{
+    position: absolute;
+    width: 3%;
+    top: 56%; 
+    left: 82%; 
+    z-index: 15;
+    
+}
+
 #inject {
     position: absolute;
     width: 10%;
