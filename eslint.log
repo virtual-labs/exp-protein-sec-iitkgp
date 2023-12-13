@@ -1,0 +1,73 @@
+
+/home/runner/work/exp-protein-sec-iitkgp/exp-protein-sec-iitkgp/experiment/simulation/js/main.js
+    7:10  warning  'start' is defined but never used                no-unused-vars
+   12:10  warning  'restartexp' is defined but never used           no-unused-vars
+   16:10  warning  'proteinsample' is defined but never used        no-unused-vars
+   23:10  warning  'zoomprotein' is defined but never used          no-unused-vars
+   42:10  warning  'showbuffer' is defined but never used           no-unused-vars
+   49:10  warning  'injectbuffer' is defined but never used         no-unused-vars
+   87:5   warning  'imgobj3' is assigned a value but never used     no-unused-vars
+   88:10  warning  'injectpush' is defined but never used           no-unused-vars
+  118:7   warning  Move function declaration to function body root  no-inner-declarations
+  129:7   warning  Move function declaration to function body root  no-inner-declarations
+  137:7   warning  Move function declaration to function body root  no-inner-declarations
+  142:9   warning  'cancelani' is not defined                       no-undef
+  148:7   warning  '$' is not defined                               no-undef
+  149:7   warning  '$' is not defined                               no-undef
+  153:7   warning  '$' is not defined                               no-undef
+  154:7   warning  '$' is not defined                               no-undef
+  158:7   warning  '$' is not defined                               no-undef
+  159:7   warning  '$' is not defined                               no-undef
+  177:10  warning  'cancelmsg' is defined but never used            no-unused-vars
+  183:10  warning  'showprotein' is defined but never used          no-unused-vars
+  195:10  warning  'injectps' is defined but never used             no-unused-vars
+  237:10  warning  'injectpushps' is defined but never used         no-unused-vars
+  264:7   warning  Move function declaration to function body root  no-inner-declarations
+  275:7   warning  Move function declaration to function body root  no-inner-declarations
+  283:7   warning  Move function declaration to function body root  no-inner-declarations
+  288:9   warning  'cancelani' is not defined                       no-undef
+  303:7   warning  Move function declaration to function body root  no-inner-declarations
+  314:7   warning  Move function declaration to function body root  no-inner-declarations
+  322:7   warning  Move function declaration to function body root  no-inner-declarations
+  327:9   warning  'cancelani' is not defined                       no-undef
+  341:7   warning  Move function declaration to function body root  no-inner-declarations
+  352:7   warning  Move function declaration to function body root  no-inner-declarations
+  360:7   warning  Move function declaration to function body root  no-inner-declarations
+  365:9   warning  'cancelani' is not defined                       no-undef
+  377:7   warning  Move function declaration to function body root  no-inner-declarations
+  388:7   warning  Move function declaration to function body root  no-inner-declarations
+  396:7   warning  Move function declaration to function body root  no-inner-declarations
+  401:9   warning  'cancelani' is not defined                       no-undef
+  465:10  warning  'elution' is defined but never used              no-unused-vars
+  490:7   warning  Move function declaration to function body root  no-inner-declarations
+  501:7   warning  Move function declaration to function body root  no-inner-declarations
+  509:7   warning  Move function declaration to function body root  no-inner-declarations
+  514:9   warning  'cancelani' is not defined                       no-undef
+  537:24  warning  'cancelani' is not defined                       no-undef
+  558:7   warning  Move function declaration to function body root  no-inner-declarations
+  569:7   warning  Move function declaration to function body root  no-inner-declarations
+  577:7   warning  Move function declaration to function body root  no-inner-declarations
+  582:9   warning  'cancelani' is not defined                       no-undef
+  628:7   warning  Move function declaration to function body root  no-inner-declarations
+  639:7   warning  Move function declaration to function body root  no-inner-declarations
+  647:7   warning  Move function declaration to function body root  no-inner-declarations
+  652:9   warning  'cancelani' is not defined                       no-undef
+  695:7   warning  Move function declaration to function body root  no-inner-declarations
+  706:7   warning  Move function declaration to function body root  no-inner-declarations
+  714:7   warning  Move function declaration to function body root  no-inner-declarations
+  719:9   warning  'cancelani' is not defined                       no-undef
+  767:7   warning  Move function declaration to function body root  no-inner-declarations
+  778:7   warning  Move function declaration to function body root  no-inner-declarations
+  786:7   warning  Move function declaration to function body root  no-inner-declarations
+  791:9   warning  'cancelani' is not defined                       no-undef
+  824:19  warning  'CanvasJS' is not defined                        no-undef
+  860:10  warning  'analyzed' is defined but never used             no-unused-vars
+  866:10  warning  'showgel' is defined but never used              no-unused-vars
+
+/home/runner/work/exp-protein-sec-iitkgp/exp-protein-sec-iitkgp/experiment/simulation/js/plotgraph.js
+  22:22  warning  'XLSX' is not defined      no-undef
+  29:22  warning  'XLSX' is not defined      no-undef
+  78:20  warning  'CanvasJS' is not defined  no-undef
+
+✖ 66 problems (0 errors, 66 warnings)
+
