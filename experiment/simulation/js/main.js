@@ -18,6 +18,7 @@ function proteinsample() {
   document.getElementById("falcon").setAttribute("onclick", "zoomprotein()");
   document.getElementById("step1").disabled = true;
   document.getElementById("Check1").disabled = false;
+  scrollBy(0,500);
 }
 
 function zoomprotein() {
@@ -42,6 +43,7 @@ function zoomprotein() {
 function showbuffer() {
   //document.getElementById("buffer").style.display = "block";
   document.getElementById("step21").disabled = false;
+  
 }
 
 //var imgobj1 = null;
@@ -49,7 +51,7 @@ function showbuffer() {
 function injectbuffer() {
 //document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibartion.";
 
-
+scrollBy(0,700);
   document.getElementById("step21").disabled = true;
   document.getElementById("buffer").setAttribute("onclick", "injectpush()");
  /* var image = document.getElementById("inject");
@@ -195,7 +197,7 @@ var imgpsi = null;
 function injectps() {
   document.getElementById("actionid").innerHTML="Protien is injected in the column.";
   document.getElementById("step22").disabled = true;
-
+  scrollBy(0,700);
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
   var currentleft = 50;
@@ -465,6 +467,8 @@ var intervalpd;
 function elution() {
   document.getElementById("actionid").innerHTML="Elution started.";
   document.getElementById("step3").disabled = true;
+  
+scrollBy(0,700);
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
   document.getElementById("canvascolumn").style.display = "none";
   document.getElementById("canvascolumnpa").style.zIndex = 12;
@@ -858,6 +862,7 @@ window.onload = function () {
 }
 
 function analyzed(){
+  scrollBy(0,700);
   document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight.";
   document.getElementById("stepgel").style.display="block";
  
