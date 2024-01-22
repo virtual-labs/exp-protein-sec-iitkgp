@@ -862,9 +862,10 @@ window.onload = function () {
 }
 
 function analyzed(){
-  scrollBy(0,700);
+  scrollBy(0,200);
   document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight.";
   document.getElementById("stepgel").style.display="block";
+  document.getElementById("stepgel").disabled=false;
  
 }
 
