@@ -9,6 +9,7 @@ Developer: Prakriti Dhang */
 document.getElementById('step4').addEventListener('click', function () {
 	document.getElementById("actionid").innerHTML="The absorbance (A280) of the sample is analyzed using a detector.";
 	document.getElementById("step5").disabled = false;
+	window.scrollBy(0,800);
 	const excelUrl = './plotdata/proteindata.xlsx';
 
 fetch(excelUrl)
