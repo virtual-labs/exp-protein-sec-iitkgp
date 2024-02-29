@@ -18,6 +18,7 @@ function proteinsample() {
   document.getElementById("falcon").setAttribute("onclick", "zoomprotein()");
   document.getElementById("step1").disabled = true;
   document.getElementById("Check1").disabled = false;
+  scrollBy(0,500);
 }
 
 function zoomprotein() {
@@ -42,6 +43,7 @@ function zoomprotein() {
 function showbuffer() {
   //document.getElementById("buffer").style.display = "block";
   document.getElementById("step21").disabled = false;
+  
 }
 
 //var imgobj1 = null;
@@ -49,7 +51,7 @@ function showbuffer() {
 function injectbuffer() {
 //document.getElementById("actionid").innerHTML="1 column volume buffer is passed through the column for equilibartion.";
 
-
+scrollBy(0,700);
   document.getElementById("step21").disabled = true;
   document.getElementById("buffer").setAttribute("onclick", "injectpush()");
  /* var image = document.getElementById("inject");
@@ -144,13 +146,19 @@ function injectpush() {
       requestAnimationFrame(loop);
     }
     else if(inputtime != "120"){
-      alert("Please set the time to 120 mins ");
+     
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set the time to 120 mins');
     }
     else if(inputflowrate != "1"){
-      alert("Please set flow rate to 1 ml/min");
+      
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set flow rate to 1 ml/min');
     }
     else{
-      alert("Please set  the time to 120 mins and flow rate to 1 ml/min");
+  
+      $('#alertModal').modal('show');
+      $('.modal-body').text('Please set  the time to 120 mins and flow rate to 1 ml/min');
     }
 
   //  }
@@ -165,6 +173,15 @@ function injectpush() {
    image1.style.left= 46+ "%";
    image.style.zIndex= 12;*/
 }
+
+
+
+function cancelmsg() {
+  document.getElementById("alertModal").style.display = "none";
+  document.getElementById("alertModal").classList.remove("show");
+}
+
+
 function showprotein() {
   document.getElementById("falconzoom").style.display = "none";
   document.getElementById("step22").disabled = false;
@@ -180,7 +197,7 @@ var imgpsi = null;
 function injectps() {
   document.getElementById("actionid").innerHTML="Protien is injected in the column.";
   document.getElementById("step22").disabled = true;
-
+  scrollBy(0,700);
   var image = document.getElementById("injectps");
   var image1 = document.getElementById("injectionps");
   var currentleft = 50;
@@ -392,6 +409,42 @@ function injectpushps() {
     else {
       currentleft--;
       image1.style.left = currentleft + '%';
+      
+
+    /*canvass11 = document.getElementById("injectioncolumnin");
+    ctxgs11 = canvass11.getContext("2d");
+    var posX = 80;
+    var speed = 2;
+
+
+
+    function drawLine() {
+
+
+      ctxgs11.strokeStyle = 'white';
+      ctxgs11.lineWidth = 600;
+      ctxgs11.beginPath();
+      ctxgs11.moveTo(posX, 0); 
+      ctxgs11.lineTo(0, 0);
+      ctxgs11.stroke();
+    }
+
+    function moveLine() {
+      posX += speed;
+
+      if (posX < 0 || posX > canvass11.height) {
+        speed = speed * -1;
+      }
+    }
+
+    function loop() {
+      // clear old frame;
+      //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
+      moveLine();
+      drawLine();
+      cancelani = requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);*/
 
     }
   }
@@ -414,6 +467,8 @@ var intervalpd;
 function elution() {
   document.getElementById("actionid").innerHTML="Elution started.";
   document.getElementById("step3").disabled = true;
+  
+scrollBy(0,700);
   //ctxgs11.clearRect(0,0,canvass11.width, canvass11.height);
   document.getElementById("canvascolumn").style.display = "none";
   document.getElementById("canvascolumnpa").style.zIndex = 12;
@@ -807,8 +862,10 @@ window.onload = function () {
 }
 
 function analyzed(){
+  scrollBy(0,200);
   document.getElementById("actionid").innerHTML="The samples are further analyzed for their purity using SDS-PAGE gel. The proteins have been separated on the basis of their molecular weight.";
   document.getElementById("stepgel").style.display="block";
+  document.getElementById("stepgel").disabled=false;
  
 }
 
