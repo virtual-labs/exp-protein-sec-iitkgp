@@ -1,0 +1,314 @@
+<!-- Lab name: Experimental Biochemistry
+Exp name: Protein purification by size exclusion chromatography (SEC)
+File name: index.html
+Developer: Prakriti Dhang-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Add CSS at the head of HTML file -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"></script-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<!-- Your code goes here-->
+	<div class="container-fluid p-2">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Instructions</div>
+					<div class="card-body">
+						<ol>
+							<li>Click on "Start the Experiment" button.
+							</li>
+							<li>Click on "Protein sample" button and on the falcon image.</li>
+							<li> Next click on the checkbox "Equilibration" and click "Add buffer" button. Set the time to 120 mins and 
+								 flow rate to 1 ml/min .
+								 Now click on the buffer bottle to pass the buffer through the column.
+							</li>
+							<li>Click on the checkbox "Protein mixture" and click "Inject protein sample" button. Now,
+								click on the plunger to inject the protiens through the column.</li>
+							<li>Now click on the "Elution" button. This will start separating the proteins and the
+								proteins will be collected in the tubes.</li>
+							<li>Click on the "Data Acquisition" button to plot the Absorbance Vs Volume graph</li>
+							<li>Click on the "SDS-PAGE analysis" button. To view the gel, click on "Show" button.</li>
+						</ol>
+						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
+					</div>
+
+				</div>
+				<!--action-->
+				
+			</div>
+			</div>
+<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Input panels</div>
+					<div class="card-body">
+						<table id="ex2tb2" class="m-1 table table-bordered">
+							<tr>
+								<td colspan="2">
+									<button id="step0" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " data-bs-toggle="modal"
+										data-bs-target="#exampleModal">Start the Experiment</button>
+
+									<button id="steprs" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
+										Experiment</button>
+								</td>
+							</tr>
+
+							<tr>
+								<td class="fs-6">Step 1</td>
+								<td>
+									<button id="step1" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;  " onclick="proteinsample()" disabled>Protein
+										sample</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-6">Step 2</td>
+								<td>
+									<div class="form-check form-check-inline">
+										<input class="custom-check-input" type="checkbox" value="" id="Check1"
+											onclick="showbuffer()" disabled />
+										<label class="custom-check-label" for="Check1">
+											Equilibration
+										</label>
+									</div>
+									<button id="step21" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="injectbuffer()" disabled>Add
+										buffer</button>
+									<br>
+									<div class="form-check form-check-inline">
+										<input class="custom-check-input" type="checkbox" value="" id="Check2"
+											onclick="showprotein()" disabled />
+										<label class="custom-check-label" for="Check2">
+											Protein mixture
+										</label>
+									</div>
+									<button id="step22" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="injectps()" disabled>Inject protein
+										sample</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-6">Step 3</td>
+								<td>
+									<button id="step3" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;  " onclick="elution()" disabled>Elution </button>
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-6">Step 4</td>
+								<td>
+									<button id="step4" type="button"
+										class="btn btn-slate-blue-grey border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " disabled >Data
+										acquisition</button> <!--onclick="dataplot()"-->
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-6">Step 5</td>
+								<td>
+									<button id="step5" type="button"
+										class="btn btn-primary border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer; " onclick="analyzed()" disabled>SDS-PAGE analysis</button> 
+										<button id="stepgel" type="button"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-1"
+										style="cursor: pointer;  display: none;" onclick="showgel()">Show</button><!--onclick="dataplot()"-->
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header fs-5 fw-bold">Action</div>
+					<div class="card-body">
+						<p class="fs-5" id="actionid"></p>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- <div class="row">
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-header fs-5 fw-bold">Action</div>
+			<div class="card-body">
+				<p class="fs-5" id="actionid"></p>
+				
+			</div>
+		</div>
+	</div>
+</div> -->
+		<div class="row ">
+			<div class="col-md-6">
+				<div class="card card-body border border-0">
+
+					<div class="img-container">
+						<img src="./images/falcontube.png" id="falcon" class="img-fluid" alt="falcon" data-toggle="tooltip" data-placement="top" title="Falcon">
+						<img src="./images/falconzoom.png" id="falconzoom" class="img-fluid" alt="faclonzoom">
+						<img src="./images/falconzoom.png" id="falconzoom1" class="img-fluid" alt="faclonzoom">
+						
+					</div>
+				</div>
+
+				<div class="card card-body border border-0">
+
+					<div class="img-container">
+
+						<img src="./images/secmachine.png" id="machine" class="img-fluid" alt="machine">
+
+						
+
+						<input type="text"  class="form-control form-control-inline" id="inpttime" placeholder="Time (min)" style="font-size: 10pt; width:12%; height:9%;"> 
+						<input type="number" class="form-control form-control-inline" min="0" max="10" id="inptfrate" placeholder="Flow rate (ml/min)" style="font-size: 10pt; width:17%; height:9%;"> 
+
+						<!--img src="./images/inject.png" id="inject" class="img-fluid" alt="inject">
+						<img src="./images/injection.png" id="injection" class="img-fluid" alt="injectionpushbtn"-->
+						<img src="./images/buffer.png" id="buffer" class="img-fluid">
+						<img src="./images/inject.png" id="injectps" class="img-fluid" alt="inject" >
+						<img src="./images/injection.png" id="injectionps" class="img-fluid" alt="injectionpushbtn" data-toggle="tooltip" data-placement="top" title="Plunger">
+						<img src="./images/colholder.png" id="colholder" class="img-fluid" alt="colholder">
+						<img src="./images/colholder.png" id="colholder1" class="img-fluid" alt="colholder">
+						<img src="./images/tube.png" id="tube" class="img-fluid" alt="tube">
+						<!--canvas  id="injectioncolumnin" style="border: 1px solid black; "></canvas-->
+
+						<canvas width="10px" height="20px" id="canvascolumn" style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpa"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpb"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpc"
+							style="border: 0px solid black; "></canvas>
+						<canvas width="10px" height="20px" id="canvascolumnpd"
+							style="border: 0px solid black; "></canvas>
+
+						<img src="./images/bufferdrop.png" id="bdrop" class="img-fluid" alt="bfdrop">
+						<img src="./images/bufferdrop.png" id="padrop" class="img-fluid" alt="psadrop">
+						<img src="./images/bufferdrop.png" id="pbdrop" class="img-fluid" alt="psbdrop">
+						<img src="./images/bufferdrop.png" id="pcdrop" class="img-fluid" alt="pscdrop">
+						<img src="./images/bufferdrop.png" id="pddrop" class="img-fluid" alt="psbdrop">
+						<canvas width="10px" height="20px" id="canvastube" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep1" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep2" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep3" style="border: 0px solid black;"></canvas>
+						<canvas width="10px" height="20px" id="canvastubep4" style="border: 0px solid black;"></canvas>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+			
+
+				<div class="card card-body border border-1">
+					<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+					<!--button id="exportChart" class="btn btn-success col-md-2">Export Chart</button-->
+
+
+				</div>
+				<!--div class="card card-body border border-0">
+					<div class="img-container">
+						<img src="./images/bufferopt.png" id="bopt" class="img-fluid" alt="bfdrop">
+						<img src="./images/proaopt.png" id="paopt" class="img-fluid" alt="psadropopt">
+						<img src="./images/probopt.png" id="pbopt" class="img-fluid" alt="psbdropopt">
+						<img src="./images/procopt.png" id="pcopt" class="img-fluid" alt="pscdropopt">
+						<img src="./images/prodopt.png" id="pdopt" class="img-fluid" alt="psbdropopt">
+					</div>
+				</div-->
+			</div>
+
+
+		</div>
+
+
+		<div class="row ">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="card card-body border border-0">
+				<div class="img-container">
+				
+				<img src="./images/outputgel.png" id="optgel" class="img-fluid" alt="outputgel">
+			</div>
+			</div>
+				</div>
+				<div class="col-md-3"></div>
+				</div>
+
+		<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message: Viewing experience</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p>A desktop or laptop is the preferred choice for an enhanced viewing experience.</p>
+						<p> When using a phone, it is recommended to enable the auto-rotate feature for an improved
+							viewing experience.</p>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-warning" onclick="start()"
+							data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Alert message</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+	
+						<button type="button" class="btn btn-warning" onclick="cancelmsg()" data-bs-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add JS at the bottom of HTML file -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/plotgraph.js"></script>
+
+		<script>
+			$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+		</script>
+<script src="../assets/js/iframeResize.js"></script></body>
+
+</html>

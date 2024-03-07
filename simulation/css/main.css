@@ -1,0 +1,369 @@
+/* Lab name: Experimental Biochemistry
+Exp name: Protein purification by size exclusion chromatography (SEC)
+File name: main.css
+Developer: Prakriti Dhang */
+
+.card {
+    margin-bottom: 10px;
+}
+
+.img-container {
+    /*width: 100%;*/
+
+    display: inline-block;
+    position: relative;
+}
+
+#falcon {
+    position: relative;
+    width: 6%;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+}
+
+#falconzoom {
+    position: absolute;
+    width: 1%;
+    /* 1-10 */
+    top: 60%;
+    left: 7%;
+}
+
+#falconzoom1 {
+    position: absolute;
+    width: 15%;
+    /* 15 */
+    top: 2%;
+    left: 15%;
+    display: none;
+}
+
+
+#machine {
+    position: relative;
+    width: 98%;
+    height:80%;
+    top: 150%;
+    left: 3%;
+}
+
+#colholder{
+    position: absolute;
+    width: 3%;
+    top: 23.7%; 
+    left: 82%; 
+    z-index: 15;
+    
+}
+#colholder1{
+    position: absolute;
+    width: 3%;
+    top: 56%; 
+    left: 82%; 
+    z-index: 15;
+    
+}
+
+#inject {
+    position: absolute;
+    width: 10%;
+    top: 60.5%; 
+    left: 50%; /*50-41 */
+    rotate: 45deg;
+    cursor: pointer;
+
+}
+
+#injection {
+    position: absolute;
+    width: 3%;
+    top: 69.6%;
+    left: 47%; /* 47-48-57.5 */
+    rotate: 45deg;
+    cursor: pointer;
+
+}
+
+
+#injectps {
+    position: absolute;
+    width: 10%;
+    top: 62%;
+    left: 50%;
+    /*50-41 */
+    rotate: 45deg;
+    cursor: pointer;
+    display: none;
+
+}
+
+/*#injectioncolumnin{
+    position: absolute;
+    width: 3%;
+    height:3%;
+    top: 72.3%;
+    left: 43.2%;
+    z-index: 12;
+    display: block;
+    transform: rotate(180deg);
+}*/
+
+
+#injectionps {
+    position: absolute;
+    width: 3%;
+    top: 70.5%;
+    left: 57%;
+    /* 47-48-57.5 */
+    rotate: 45deg;
+    cursor: pointer;
+    display: none;
+
+}
+
+#buffer {
+    position: absolute;
+    width: 6.8%;
+    top: 9%;
+    left: 24.4%;
+    display: block;
+    opacity: 0.8;
+    cursor:pointer;
+    
+}
+
+#tube {
+
+    position: absolute;
+    width: 3%;
+    top: 85%;
+    left: 82%;
+}
+
+#canvascolumn {
+    position: absolute;
+    width: 1.5%;
+    height:51%;
+    /*15- 51*/
+    top: 14.6%; /*14.5*/
+    /*10-50*/
+    left: 82.8%;
+    z-index: 12;
+    /*transform:  rotate(-180deg);*/
+
+}
+
+#canvascolumnpa {
+    position: absolute;
+    width: 1.5%;
+    height: 25%;
+    top: 40%;
+    left: 82.8%;
+    z-index: 10;
+
+}
+
+#canvascolumnpb {
+    position: absolute;
+    width: 1.5%;
+    height: 35%;
+    top: 30%;
+    left: 82.8%;
+    z-index: 8;
+}
+
+#canvascolumnpc {
+    position: absolute;
+    width: 1.5%;
+    height: 45%;
+    top: 20%;
+    left: 82.8%;
+    z-index: 6;
+}
+
+#canvascolumnpd {
+    position: absolute;
+    width: 1.5%;
+    height: 51%;
+    top: 14.5%;
+    left: 82.8%;
+}
+
+
+#canvastube {
+    position: absolute;
+    width: 2.3%;
+    height: 12%;
+    top: 93%;
+    left: 82.4%;
+    transform:  rotate(-180deg);
+}
+
+#canvastubep1 {
+    position: absolute;
+    width: 2.3%;
+    height: 12%;
+    top: 93%;
+    left: 82.4%;
+    transform:  rotate(-180deg);
+}
+
+#canvastubep2 {
+    position: absolute;
+    width: 2.3%;
+    height: 12%;
+    top: 93%;
+    left: 82.4%;
+    transform:  rotate(-180deg);
+}
+
+#canvastubep3 {
+    position: absolute;
+    width: 2.3%;
+    height: 12%;
+    top: 93%;
+    left: 82.4%;
+    transform:  rotate(-180deg);
+}
+
+#canvastubep4 {
+    position: absolute;
+    width: 2.3%;
+    height: 12%;
+    top: 93%;
+    left: 82.4%;
+    transform:  rotate(-180deg);
+}
+
+#bdrop {
+    position: absolute;
+    width: 1.8%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
+    display: none;
+}
+
+#padrop {
+    position: absolute;
+    width: 1.8%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
+    display: none;
+}
+
+#pbdrop {
+    position: absolute;
+    width: 1.8%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
+    display: none;
+}
+
+#pcdrop {
+    position: absolute;
+    width: 1.8%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
+    display: none;
+}
+
+#pddrop {
+    position: absolute;
+    width: 1.8%;
+    top: 71%; /*71-85*/
+    left: 82.6%;
+    display: none;
+}
+
+#bopt{
+    position: relative;
+    width: 3%;
+    top: 10%;
+    left: 20%;
+    display: none;
+}
+
+
+#paopt{
+    position: absolute;
+    width: 5%;
+    top: 1%;
+    left: 52%;
+    display: none;
+}
+
+#pbopt{
+    position: absolute;
+    width: 5%;
+    top: 1%;
+    left: 62%;
+    display: none;
+}
+#pcopt{
+    position: absolute;
+    width: 5%;
+    top: 1%;
+    left: 72%;
+    display: none;
+}
+#pdopt{
+    position: absolute;
+    width: 5%;
+    top: 1%;
+    left: 80%;
+    display: none;
+}
+
+
+/* #ladder{
+    position: relative;
+    width:30%; 
+    top: 1%;
+    left: 10%;
+    display: none;
+} */
+#optgel{
+    position: relative;
+    width:35%; /*60*/
+    top: 1%;
+    left: 40%;
+    display: none;
+}
+
+#inpttime{
+   
+    position: absolute;
+    width: 12%;
+    top: 40%;
+    left: 10%;
+    border:1px solid white;
+    z-index:10;
+}
+
+#inptfrate{
+   
+    position: absolute;
+    width: 19%;
+    top: 55%;
+    left: 10%;
+    
+    z-index:10;
+}
+
+.btn-slate-blue-grey {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #6A5ACD;
+    --bs-btn-border-color: #6A5ACD;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #483D8B;
+    --bs-btn-hover-border-color: #6A5ACD;
+    --bs-btn-focus-shadow-rgb: 106, 90, 205;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6A5ACD;
+    --bs-btn-active-border-color: #4B0082;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #6A5ACD;
+    --bs-btn-disabled-border-color: #6A5ACD;
+  }
