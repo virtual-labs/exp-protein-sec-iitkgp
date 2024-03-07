@@ -130,7 +130,7 @@ Developer: Prakriti Dhang */
     display: block;
     opacity: 0.8;
     cursor:pointer;
-   
+    
 }
 
 #tube {
@@ -150,6 +150,7 @@ Developer: Prakriti Dhang */
     /*10-50*/
     left: 82.8%;
     z-index: 12;
+    /*transform:  rotate(-180deg);*/
 
 }
 
@@ -196,6 +197,7 @@ Developer: Prakriti Dhang */
     height: 12%;
     top: 93%;
     left: 82.4%;
+    transform:  rotate(-180deg);
 }
 
 #canvastubep1 {
@@ -204,6 +206,7 @@ Developer: Prakriti Dhang */
     height: 12%;
     top: 93%;
     left: 82.4%;
+    transform:  rotate(-180deg);
 }
 
 #canvastubep2 {
@@ -212,6 +215,7 @@ Developer: Prakriti Dhang */
     height: 12%;
     top: 93%;
     left: 82.4%;
+    transform:  rotate(-180deg);
 }
 
 #canvastubep3 {
@@ -220,6 +224,7 @@ Developer: Prakriti Dhang */
     height: 12%;
     top: 93%;
     left: 82.4%;
+    transform:  rotate(-180deg);
 }
 
 #canvastubep4 {
@@ -228,11 +233,12 @@ Developer: Prakriti Dhang */
     height: 12%;
     top: 93%;
     left: 82.4%;
+    transform:  rotate(-180deg);
 }
 
 #bdrop {
     position: absolute;
-    width: 2.3%;
+    width: 1.8%;
     top: 71%; /*71-85*/
     left: 82.6%;
     display: none;
@@ -240,7 +246,7 @@ Developer: Prakriti Dhang */
 
 #padrop {
     position: absolute;
-    width: 2.3%;
+    width: 1.8%;
     top: 71%; /*71-85*/
     left: 82.6%;
     display: none;
@@ -248,7 +254,7 @@ Developer: Prakriti Dhang */
 
 #pbdrop {
     position: absolute;
-    width: 2.3%;
+    width: 1.8%;
     top: 71%; /*71-85*/
     left: 82.6%;
     display: none;
@@ -256,7 +262,7 @@ Developer: Prakriti Dhang */
 
 #pcdrop {
     position: absolute;
-    width: 2.3%;
+    width: 1.8%;
     top: 71%; /*71-85*/
     left: 82.6%;
     display: none;
@@ -264,7 +270,7 @@ Developer: Prakriti Dhang */
 
 #pddrop {
     position: absolute;
-    width: 2.3%;
+    width: 1.8%;
     top: 71%; /*71-85*/
     left: 82.6%;
     display: none;
