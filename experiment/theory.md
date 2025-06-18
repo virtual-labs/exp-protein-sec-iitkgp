@@ -25,7 +25,7 @@ Effective separation of the protein sample through the size exclusion chromatogr
 2.	**Analytical size exclusion chromatography :-** It is used to study  properties of protein biomolecules , check the purity of the sample, evaluate protein stability and study complex formation. Small sample volumes of 0.3% to 0.5% of the total column volume are applied at low flow rates using short columns. The resolution of separation is less than preparative size exclusion chromatography.
 3.	**Desalting and buffer exchange :-** It is a group separation process during which small molecules such as salt or free labels are separated from a group of larger molecules such as proteins. Large sample volumes up to 30% of the total column volume can be applied at high flow rates using broad, short columns. 
 
-## Real World Application
+## Real World Applications
 1. Protein purification in biotech and pharmaceutical industry.
 2. Estimation of molecular weight of proteins, peptides, and polymers.
 3. Detection of aggregates during quality control of biopharmaceuticals.
