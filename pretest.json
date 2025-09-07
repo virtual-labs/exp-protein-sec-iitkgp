@@ -1,0 +1,125 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. A  globular protein of size 30kDa exists as a monomer and dimer in solution. The most appropriate technique for separation of these two forms of protein is",
+      "answers": {
+        "a": "Size exclusion chromatography",
+        "b": "Affinity chromatography",
+        "c": "Ion-exchange chromatography",
+        "d": "Hydrophobic chromatography"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In size exclusion chromatography, molecules are separated on the basis of their",
+      "answers": {
+        "a": "Molecular weight",
+        "b": "Hydrodynamic volume",
+        "c": "Charge",
+        "d": "Adsorptive properties"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Effective separation of the protein sample through the size exclusion chromatography column depends on a number of factors ",
+      "answers": {
+        "a": "Pore size",
+        "b": "Viscosity of sample and buffer",
+        "c": "Packing density of the column",
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What do you mean by resolution in size exclusion chromatography?",
+      "answers": {
+        "a": "The degree of separation between peaks ",
+        "b": "Range of separation of the column",
+        "c": "Efficiency of the column media to produce narrow and sharp peak",
+        "d": "Both (a) and (c)"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. In size exclusion chromatography proteins are detected by measuring their absorbance at",
+      "answers": {
+        "a": "260 nm",
+        "b": "300 nm",
+        "c": "280 nm",
+        "d": "500 nm"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Application of size exclusion chromatography are",
+      "answers": {
+        "a": "Isolate one or more components from a protein mixture",
+        "b": "Determine molecular weight of the protein",
+        "c": "Buffer exchange and desalting",
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. Chromatographic media used for size exclusion chromatography are chosen on the basis of",
+      "answers": {
+        "a": "Inertness",
+        "b": "Chemical and physical stability",
+        "c": "None of the above",
+        "d": "Both (a) and (b)"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. Molecules that do not enter the chromatography matrix are eluted ",
+      "answers": {
+        "a": "In the void volume",
+        "b": "When one column volume of buffer has passed through the column",
+        "c": "When half column volume  of buffer has passed through the column",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. Fractionation range of a column matrix means",
+      "answers": {
+        "a": "Range of molecular weights that have partial access to the pores of the particle and can be separated",
+        "b": "Size of the molecules that are excluded from the pores",
+        "c": "Molecules that elute in the void volume",
+        "d": "Selectivity of the matrix"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. What might be one of the possible reasons behind a blocked column ?",
+      "answers": {
+        "a": "Protein precipitation in the column",
+        "b": "Column is not equilibrated properly",
+        "c": "Column is overloaded with sample",
+        "d": "Both (a) and (c)"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}

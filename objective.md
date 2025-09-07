@@ -1,0 +1,3 @@
+## Objective
+
+Size exclusion chromatography is used to separate protein molecules based on differences in size as they pass through a gel filtration medium packed in a column. The gel filtration medium consists of spherical beads containing pores of a specific size distribution. Small molecules diffuse into the pores and are eluted later whereas the larger protein molecules do not enter the pores and are eluted in the void volume. The molecules separate on the basis of size as they pass through the column and are eluted in order of decreasing molecular weight.
